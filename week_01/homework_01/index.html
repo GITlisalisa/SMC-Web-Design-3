@@ -10,19 +10,7 @@
   
     <script src="_js/jquery.min.js"></script>
     <script src="main.js"></script>
-    <script>
-      $(document).ready(function() {
-        $("#toggleButton").click(function() {
-                if ($(this).text() === "Read more") {
-                  $(this).text("Close");
-                  $("#more-bio").show();
-                } else {
-                  $(this).text("Read more");
-                  $("#more-bio").hide();
-                }
-        }); // end click
-      }); //end ready 
-      </script>
+    
   </head>
 <body>
 <div id="wrapper"> 
@@ -267,6 +255,18 @@
 
 </div> <!-----closes forms floater-section small-width-100 med-width-50----->
 </div> <!-- closes wrapper -->
-
+<script>
+  $(document).ready(function() {
+    $("#toggleButton").click(function() {
+            if ($(this).text() === "Read more") {
+              $(this).text("Less");
+              $("#more-bio").show();
+            } else {
+              $(this).text("Read more");
+              $("#more-bio").hide();
+            }
+    }); // end click
+  }); //end ready 
+  </script>
 </body>
 </html>
