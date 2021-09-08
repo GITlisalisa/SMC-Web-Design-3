@@ -147,6 +147,7 @@ picture img {
 }
 #about-container{
     max-width: 600px;
+    margin-bottom: 50px;
 }
 #quote {
     position: relative;
