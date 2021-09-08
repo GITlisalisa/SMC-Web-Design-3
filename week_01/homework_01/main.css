@@ -187,6 +187,7 @@ label {
     margin: auto;
     background-color: #FFF;
     padding: 12px;
+    max-width: 600px;
 }
 
 #subject {
