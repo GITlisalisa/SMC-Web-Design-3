@@ -105,10 +105,10 @@ picture img {
 #toggleButton{
   font-family: 'Cabin', sans-serif;
   background-color: black;
+  color: white;
   padding: 10px;
-  font-size: 18px;
+  font-size: 1em;
   margin: 0 auto;
-  border-radius: 8px;
 }
 #vertHorizCenter4 {
     position: relative;
