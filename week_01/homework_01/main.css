@@ -125,7 +125,9 @@ picture img {
     max-width: 100%;
     padding: 0px;
 }
-
+#about-container{
+    max width: 600px;
+}
 #quote {
     position: relative;
     left: 62%;
