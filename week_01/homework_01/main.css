@@ -25,7 +25,7 @@ picture img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: black;
+    /* background-color: black; */
 /*    height: auto;*/
    
     justify-content: space-around;
