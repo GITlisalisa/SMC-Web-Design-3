@@ -12,7 +12,6 @@
     <script src="main.js"></script>
     <script>
       $(document).ready(function() {
-        $('#more-bio').hide();
         $("#toggleButton").click(function() {
                 if ($(this).text() === "Read more") {
                   $(this).text("Close");
@@ -209,7 +208,7 @@
           <div class="bio-btn">
           <button id="toggleButton">Read more</button>
         </div>
-          <div id="more-bio" >
+          <div id="more-bio" style="display: none">
             <p>extra extra bio info</p>
         </div>
         </div>
