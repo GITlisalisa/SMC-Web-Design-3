@@ -102,7 +102,14 @@ picture img {
     font-size: 60px;
 }
 /******** About **********/
-
+.bio-btn{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
 #vertHorizCenter4 {
     position: relative;
     left: 61%;
