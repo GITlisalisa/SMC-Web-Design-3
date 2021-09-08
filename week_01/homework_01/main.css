@@ -126,6 +126,7 @@ picture img {
 .about-section {
     max-width: 600px;
     margin: auto;
+    float: right;
 }
 #about {
     position: relative;
