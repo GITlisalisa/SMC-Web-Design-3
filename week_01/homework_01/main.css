@@ -24,15 +24,25 @@ picture img {
     margin:auto;
     width: 100%;
 }
+#gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+/*    height: auto;*/
+   
+    justify-content: space-around;
+    min-width: 300px;
+        align-content: center;
+}
+
+.box{
+    width: auto;
+margin: auto;
+
+}
 .content .img-container {
     min-height: 160px;
     text-align: center;
     max-width: 100%;
-}
-#gallery-container{
-
-}
-#micro-scuptures-container{
-    background-color: black;
-    width: auto;
 }
