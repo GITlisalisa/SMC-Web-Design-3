@@ -192,7 +192,7 @@
             <div class="content">
               <p>Fidai began sculpting miniature figures out of pencil graphite in 2014. The process is challenging due to the fragile nature of graphite and it is common for the miniature sculptures to fracture after spending many hours on a single piece. Fidai spends between six and twelve hours an average to produce a statuette, while complicated models take between two and three days to create. He uses a craft knife and a stereo microscope for creating the tiny sculptures. At first, he used jumbo pencils with a graphite diameter of 5mm. He now primarily uses lead between 0.5 and 2mm in diameter. His microsculptures have featured characters from movies and cartoons, animals, objects from popular culture, comic book characters, famous works of art, household items, and architectural icons.</p>
           </div>
-          <button>Read more</button>
+          <button id="read-more">Read more</button>
           <div class="more-bio">
             <p>more bio info</p>
         </div>
@@ -255,7 +255,7 @@
 <script>
 $(document).ready(function() {
   $('.more-bio').hide();
-  $("button").click(function() {
+  $("#read-more").click(function() {
     var $bio=$(this).next('.more-bio');
     if ($bio.is(':hidden')) {
         $bio.slideDown();  
