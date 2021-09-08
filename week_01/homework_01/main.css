@@ -141,7 +141,10 @@ picture img {
     padding: 0px;
     background-color: #161513;
     display: flex;
-    align-content: center;
+    align-items: center;
+}
+#salavatImg img{
+
 }
 #about-container{
     max-width: 600px;
