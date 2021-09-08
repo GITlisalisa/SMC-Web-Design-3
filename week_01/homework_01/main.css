@@ -137,6 +137,7 @@ picture img {
 #salavatImg {
     max-width: 100%;
     padding: 0px;
+    background-image: url("salavat.jpg")
 }
 #about-container{
     max-width: 600px;
