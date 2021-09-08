@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+
+/*******hero page*****************/
 h1 {
     font-family: 'Cabin Sketch', cursive;
     font-size: 4em;
@@ -7,10 +9,13 @@ h1 {
     margin: 50px 0 0 0;
 }
 p {
+/*    font-family:'Roboto Slab', serif;*/
     font-family: 'Cabin', sans-serif;
+/*    font-family: font-family: 'Playfair Display', serif;*/
     font-size: 2em;
     margin: 80px 20px 0 20px;
 }
+
 .img-container {
     margin: auto;
     background-position: center;
@@ -21,11 +26,12 @@ picture img {
     margin:auto;
     width: 100%;
 }
+
 #gallery-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* background-color: black; */
+/*    background-color: black;*/
 /*    height: auto;*/
    
     justify-content: space-around;
@@ -42,4 +48,195 @@ margin: auto;
     min-height: 160px;
     text-align: center;
     max-width: 100%;
+}
+
+
+.content {
+    min-height: 115px;
+    position: relative;
+}
+
+
+
+.content img {
+    max-width: 96%;
+}
+
+.content2 {
+    width: 100%;
+}
+
+.content2 img {
+    width: 100%
+}
+
+#vertHorizCenter2 {
+    position: relative;
+    top: 50%;
+    left: 16%;
+    transform: translate(-16%, 2%);
+
+    margin: 0px;
+    text-align: center;
+
+    margin-top: 66px;
+
+    padding: 0px 10px;
+}
+
+#vertHorizCenter3 {
+    position: relative;
+    top: 50%;
+    left: 22%;
+    transform: translate(-23%, 30%);
+
+    margin: 0px;
+    text-align: center;
+}
+
+#vertHorizCenter1 h1 {
+    
+    /* Half the height accounting for padding and border */
+    margin: auto;
+    height: 28px;
+    
+    text-align: center;
+    font-size: 60px;
+}
+/******** About **********/
+
+#vertHorizCenter4 {
+    position: relative;
+    left: 61%;
+    transform: translate(-61%, 6%);
+    width: 91%;
+    padding-bottom: 40px;
+}
+
+#about {
+    position: relative;
+    left: 61%;
+    transform: translate(-61%, 6%);
+    width: 91%;
+    padding-bottom: 40px;
+}
+
+#salavatImg {
+    max-width: 100%;
+    padding: 0px;
+}
+
+#quote {
+    position: relative;
+    left: 62%;
+    transform: translate(-62%, 6%);
+    width: 100%;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #bea57c;
+    font-family:  'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+}
+
+.content p {
+    line-height: 34px;
+}
+
+.content4 {
+    text-align: center;
+}
+
+/*-------Contact Information---------*/
+label {
+    color: darkgrey;
+}
+.contact_about .contact_h1 {
+    margin-top: 0;
+}
+
+.about_p {
+    margin-top: 93px;
+}
+
+.form1 p {
+    text-align: center;
+    font-size: 1em;
+
+    padding-bottom: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.forms {
+    font-family: 'Playfair Display', serif;
+    margin: auto;
+    position: relative;
+    display: block;
+}
+
+.info {
+    align-content: center;
+    letter-spacing: 1.2px;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.first_form {
+    margin: auto;
+    background-color: #FFF;
+    padding: 12px;
+}
+
+#subject {
+    height: 150px;
+    width: 95%;
+    display: block;
+    padding: 0px 10px;
+    border: 1px solid #e3e3e3;
+    margin-top: 15px;
+    font-size: 17px;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+#fullName,#emailAddress,#subjectInfo {
+    font-size: 1.5em;
+}
+
+.form-input {
+    display: block;
+    width: 95%;
+    height: 40px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    padding: 0px 10px;
+    border: 1px solid #e3e3e3;
+}
+
+
+.form_submit {
+    margin-right: -21px;
+    margin-top: 10px;
+    padding: 12px 35px;
+    color: #FFF;
+    background-color: black;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    left: 55%;
+    transform: translate(-55%, 6%);
+}
+
+#vertHorizCenter9 {
+    position: relative;
+    left: 57%;
+    transform: translate(-57%, 6%);
+    width: 100%;
+    padding-bottom: 40px;
+    min-height: 827px;
 }
