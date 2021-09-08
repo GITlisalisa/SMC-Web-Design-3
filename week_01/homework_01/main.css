@@ -12,7 +12,7 @@ p {
 /*    font-family:'Roboto Slab', serif;*/
     font-family: 'Cabin', sans-serif;
 /*    font-family: font-family: 'Playfair Display', serif;*/
-    font-size: 2em;
+    font-size: 1em;
     margin: 80px 20px 0 20px;
 }
 
@@ -41,7 +41,7 @@ picture img {
 
 .box{
     width: 300px;
-margin: auto;
+    margin: auto;
 
 }
 .content .img-container {
