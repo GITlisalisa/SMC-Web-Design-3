@@ -31,12 +31,10 @@ picture img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-/*    background-color: black;*/
-/*    height: auto;*/
-   
     justify-content: space-around;
     min-width: 300px;
-        align-content: center;
+    align-content: center;
+    max-width: fit-content;
 }
 
 .box{
