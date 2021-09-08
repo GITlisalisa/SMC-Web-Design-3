@@ -141,7 +141,9 @@ picture img {
     letter-spacing: 0.8px;
     font-weight: 100;
 }
-
+#about-container p {
+    margin: auto;
+}
 .content p {
     line-height: 1.5em;
 }
