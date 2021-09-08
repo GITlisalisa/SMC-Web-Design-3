@@ -51,10 +51,10 @@ picture img {
 }
 
 
-.content {
+/* .content {
     min-height: 115px;
     position: relative;
-}
+} */
 
 
 
@@ -126,7 +126,7 @@ picture img {
     padding: 0px;
 }
 #about-container{
-    max width: 600px;
+    max-width: 600px;
 }
 #quote {
     position: relative;
