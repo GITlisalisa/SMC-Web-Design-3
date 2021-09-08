@@ -13,12 +13,12 @@
     <script>
       $(document).ready(function() {
         $('#more-bio').hide();
-        $("#read-more").click(function() {
+        $("#toggleButton").click(function() {
                 if ($(this).text() === "Read more") {
                   $(this).text("Close");
                   $("#more-bio").show();
                 } else {
-                  $(this).text("Read Bio");
+                  $(this).text("Read more");
                   $("#more-bio").hide();
                 }
         }); // end click
