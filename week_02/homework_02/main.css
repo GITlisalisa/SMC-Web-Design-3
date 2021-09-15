@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-h1{
+.name {
 font-family: 'Bebas Neue', cursive;
 font-size: 3em;
 }
