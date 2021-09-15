@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-.name {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap');
+h1 {
 font-family: 'Bebas Neue', cursive;
 font-size: 3em;
+}
+
+h2 {
+   font-family: 'Raleway', sans-serif;
 }
