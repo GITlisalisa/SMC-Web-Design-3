@@ -7,3 +7,39 @@
     font-weight: 700!important;
     color: #06AFD9;
 }
+.divider {
+    margin: 5rem 0;
+}
+hr {
+    margin: 1rem 0;
+    color: #06AFD9;
+    background-color: currentColor;
+    border: 0;
+    opacity: .75;
+    width: 75%;
+}
+@media (min-width: 62em)
+.featurette-heading {
+    margin-top: 7rem;
+}
+
+@media (min-width: 40em)
+.featurette-heading {
+    font-size: 50px;
+}
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.divider {
+    margin: 5rem 0;
+    margin-top: 5rem;
+    margin-right: 0px;
+    margin-bottom: 5rem;
+    margin-left: 250px;
+}
