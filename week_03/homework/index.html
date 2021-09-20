@@ -4,20 +4,24 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
     <title>Homework 3 Bootstrap UI Components</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   </head>
   <body>
- 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="logo"></a>
+                <style>
+                    .navbar-brand img{
+                        width: 75px;
+                    }
+                </style>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -29,9 +33,22 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                   </li>
-                </ul>
-                </div>
-            </div>
+                  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false"> Services </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Social Media</a></li>
+                        <li><a class="dropdown-item" href="#">Google Ads</a></li>
+                        <li><a class="dropdown-item" href="#">Facebook Ads</a></li>
+                    </ul>
+                    <div class="d-flex">
+                      <ul>
+                          <li><span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span></li>
+                          <li><span class="social-icon social-google"><i class="fa fa-google"></i></span></li>
+                          <li><span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span></li>
+                          <li><span class="social-icon social-twitter"><i class="fa fa-twitter"></i></span></li>
+                      </ul>
+                </div><!--closes d-flex div-->
+            </div><!---closes collapse navbar div-->
+            </div><!---closes navbar container-->
           </nav>
     </header>
 <main>
@@ -53,28 +70,119 @@
           </div>
     </section>
     <hr class="divider">
-    <div class="container">
-
-    
-        <div class="row gy-3">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Our Community</h2>    
-                <p class="lead">Sugar seasonal shop to go mazagran sugar frappuccino. Froth mocha ristretto steamed sit seasonal bar  wings organic cream. Lungo, carajillo cup trifecta grounds single origin, latte turkish iced so instant. </p>  
-            </div>
+    <h1>Our Community</h1>
+    <section class="container">
+        <div class="row g-3">
             <div class="col-md-5">
                 <img src="images/interior.jpg" class="img-fluid border rounded-3 mb-4" alt="earlybird image" width="800" height="500" loading="lazy">
             </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Our People</h2>    
+                <p class="lead">Sugar seasonal shop to go mazagran sugar frappuccino. Froth mocha ristretto steamed sit seasonal bar  wings organic cream. Lungo, carajillo cup trifecta grounds single origin, latte turkish iced so instant. </p>  
+            </div>
         </div>
-        <div class="row gy-5">
+        <div class="row g-3">
+            <div class="col-md-5">
+                <img src="images/interior.jpg" class="img-fluid border rounded-3 mb-4" alt="earlybird image" width="800" height="500" loading="lazy">
+            </div>
             <div class="col-md-7">
                 <h2 class="featurette-heading">We are more than coffee</h2>    
                 <p class="lead"> Organic blue mountain, as barista rich coffee saucer pumpkin spice bar. Galão affogato coffee blue mountain, redeye caramelization robust arabica kopi-luwak chicory.</p>  
             </div>
-            <div class="col-md-5">
-                <img src="images/interior.jpg" class="img-fluid border rounded-3 mb-4" alt="earlybird image" width="800" height="500" loading="lazy">
-            </div>
         </div>
-    </div><!---closes container-->
+    </section><!---closes container for community featurette-->
+    <hr class="divider">
+    <h1>Our Menu</h1>
+    <section class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card">
+                <img src="images/cup.jpg" class="card-img-top" alt="coffee cup">
+                <div class="card-body">
+                  <h5 class="card-title">Latte</h5>
+                  <p class="card-text">That froth, dark, mazagran sit beans french press dripper irish whipped, espresso at extraction cultivar a, java plunger pot acerbic whipped.</p>
+                  <a href="#" class="btn btn-outline-primary">Add to Order</a>
+                </div>
+              </div>
+            </div><!---closes col-->
+            <div class="col">
+                <div class="card">
+                    <img src="images/cup.jpg" class="card-img-top" alt="coffee cup">
+                    <div class="card-body">
+                      <h5 class="card-title">Cappuccino</h5>
+                      <p class="card-text">That froth, dark, mazagran sit beans french press dripper irish whipped, espresso at extraction cultivar a, java plunger pot acerbic whipped.</p>
+                      <a href="#" class="btn btn-outline-primary">Add to Order</a>
+                    </div>
+                  </div>
+                </div><!---closes col-->
+                <div class="col">
+                    <div class="card">
+                        <img src="images/cup.jpg" class="card-img-top" alt="coffee cup">
+                        <div class="card-body">
+                          <h5 class="card-title">Espresso</h5>
+                          <p class="card-text">That froth, dark, mazagran sit beans french press dripper irish whipped, espresso at extraction cultivar a, java plunger pot acerbic whipped.</p>
+                          <a href="#" class="btn btn-outline-primary">Add to Order</a>
+                        </div>
+                      </div>
+                    </div><!---closes col-->
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/cup.jpg" class="card-img-top" alt="coffee cup">
+                            <div class="card-body">
+                              <h5 class="card-title">Macchiato</h5>
+                              <p class="card-text">That froth, dark, mazagran sit beans french press dripper irish whipped, espresso at extraction cultivar a, java plunger pot acerbic whipped.</p>
+                              <a href="#" class="btn btn-outline-primary">Add to Order</a>
+                            </div>
+                            </div>
+                          </div><!---closes col-->
+                          <div class="col">
+                            <div class="card">
+                                <img src="images/cup.jpg" class="card-img-top" alt="coffee cup">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mocha</h5>
+                                  <p class="card-text">That froth, dark, mazagran sit beans french press dripper irish whipped, espresso at extraction cultivar a, java plunger pot acerbic whipped.</p>
+                                  <a href="#" class="btn btn-outline-primary">Add to Order</a>
+                                </div>
+                              </div>
+                        </div><!---closes col-->
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/cup.jpg" class="card-img-top" alt="coffee cup">
+                                <div class="card-body">
+                                  <h5 class="card-title">Drip Coffee</h5>
+                                  <p class="card-text">That froth, dark, mazagran sit beans french press dripper irish whipped, espresso at extraction cultivar a, java plunger pot acerbic whipped.</p>
+                                  <a href="#" class="btn btn-outline-primary">Add to Order</a>
+                                </div>
+                              </div>
+                        </div><!---closes col-->
+        </div><!---closes row-->
+    </section><!---closes menu container-->
+    <hr class="divider">
+    <h1>Our Space</h1>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-12 col-md-12 col-lg-4 p-3">
+            <img src="images/interior.jpg" class="img-fluid " alt="interior">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="images/interior.jpg" class="img-fluid " alt="interior">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="images/interior.jpg" class="img-fluid " alt="interior">
+          </div>
+        </div><!---closes row 1-->
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4 p-3">
+            <img src="images/interior.jpg" class="img-fluid " alt="interior">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="images/interior.jpg" class="img-fluid " alt="interior">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="images/interior.jpg" class="img-fluid " alt="interior">
+          </div>
+        </div><!---closes row 2-->
+    </div><!---closes Our Space container-->
 
 </main>
 
