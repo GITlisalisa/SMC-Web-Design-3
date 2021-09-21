@@ -4,6 +4,23 @@
 body {
     margin: auto;
     padding-top: 70px;
+    max-width: 960px;
+}
+.navbar .container-fluid{
+display: flex;
+flex-wrap: inherit;
+align-items: center;
+justify-content: space-between;
+margin: auto;
+max-width: 960px;
+
+}
+.navbar{
+    padding: 1.5rem;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    /* border-color: rgba(0,0,0,.1); */
 }
 h1 {
     font-size: 2.5rem;
@@ -29,6 +46,10 @@ h1 {
 .divider {
     margin: 3rem 0;
     margin-left: 33%;
+}
+hr:not([size]) {
+    height: 2px;
+    margin-top: 5rem;
 }
 hr {
     margin: 1rem 0;
@@ -100,5 +121,7 @@ ul {
 .fa:hover {
     opacity: 0.7;
   }
-
+  small, small {
+    font-size: .75em;
+}
 
