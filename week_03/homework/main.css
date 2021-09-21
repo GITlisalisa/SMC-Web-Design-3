@@ -1,11 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
-/* body {
-    margin: auto;
-    padding-top: 70px;
-    max-width: 960px;
-} */
 .container {
 
     width: 100%;
@@ -141,4 +135,11 @@ h1{
 }
 address{
     padding: 1rem;
+}
+header{
+    background-color: #E5E5E5;
+}
+footer{
+    background-color: #E5E5E5;
+    height: 2rem;
 }
