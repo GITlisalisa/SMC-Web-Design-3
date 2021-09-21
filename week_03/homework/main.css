@@ -1,20 +1,18 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
-body {
+/* body {
     margin: auto;
     padding-top: 70px;
     max-width: 960px;
-}
+} */
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
 
-}
-@media (min-width: 992px)
-.container {
-    max-width: 960px;
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: 0;
+    margin-left: 0;
 }
 .navbar{
 display: flex;
@@ -140,4 +138,7 @@ ul {
 }
 h1{
     color: #06AFD9;
+}
+address{
+    padding: 1rem;
 }
