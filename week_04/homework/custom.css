@@ -1,34 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Unica+One&display=swap');
 
-.alamo-font{
-    font-family: 'Kreon', serif;
+:root{
+    --headingColor: rgb(166, 99, 204);
+    --subheadingColor: rgb(111,45, 189);
+    --linkColor: rgb(178, 152, 220);
+    --hoverColor: rgb(184, 208, 235);
+    --activeColor: rgb(185, 250, 248);
 }
-.background-image{
-height: 100vh;
+
+.navbar{
+    position: fixed;
 }
-.container {
+a {
+    color: var(--linkColor);
+    font-family: 'Unica One', cursive;
+}
+p{
+    font-family: 'Crimson Text', serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.lead{
+    font-family: 'Crimson Text', serif;
+    outline-style: solid;
+    outline-color: var(--subheadingColor);
+    padding: 1.5rem;
+}
+.display-1,.display-2{
+    color: var(--headingColor);
+    font-family: 'Unica One', cursive; 
+}
+.display-3{
+    color: var(--subheadingColor);
+    font-family: 'Unica One', cursive;
+}
+/* .container {
     position: relative;
     text-align: center;
-    color: white;
-  }
+  } */
   .jumbotron {
-    background-image: url(images/earlybird.jpg);
+    background-image: url(images/snail.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    margin-bottom: 0;
    }
-
-/* CSS HEX */
---blue-sapphire: #05668dff;
---metallic-seaweed: #028090ff;
---persian-green: #00a896ff;
---mountain-meadow: #02c39aff;
---pale-spring-bud: #f0f3bdff;
-
-/* CSS HSL */
---blue-sapphire: hsla(197, 93%, 29%, 1);
---metallic-seaweed: hsla(187, 97%, 29%, 1);
---persian-green: hsla(174, 100%, 33%, 1);
---mountain-meadow: hsla(167, 98%, 39%, 1);
---pale-spring-bud: hsla(63, 69%, 85%, 1);
+   .container-fluid{
+       background-color: black;
+   }
+   .img-fluid{
+       width: 100%;
+   }
+ 
