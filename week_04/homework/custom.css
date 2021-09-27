@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&display=swap');
+
+.alamo-font{
+    font-family: 'Kreon', serif;
+}
+.background-image{
+height: 100vh;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .jumbotron {
+    background-image: url(images/earlybird.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+/* CSS HEX */
+--blue-sapphire: #05668dff;
+--metallic-seaweed: #028090ff;
+--persian-green: #00a896ff;
+--mountain-meadow: #02c39aff;
+--pale-spring-bud: #f0f3bdff;
+
+/* CSS HSL */
+--blue-sapphire: hsla(197, 93%, 29%, 1);
+--metallic-seaweed: hsla(187, 97%, 29%, 1);
+--persian-green: hsla(174, 100%, 33%, 1);
+--mountain-meadow: hsla(167, 98%, 39%, 1);
+--pale-spring-bud: hsla(63, 69%, 85%, 1);
