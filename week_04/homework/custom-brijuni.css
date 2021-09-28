@@ -10,11 +10,13 @@
 
 .navbar{
     width: 100%;
+    background-color: white;
 }
-.navbar-dark .navbar-nav .nav-link.active {
+
+.navbar-light .navbar-nav .nav-link.active {
     color: var(--activeColor);
 }
-.navbar-dark .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
     color: var(--linkColor);
 }
 /* .collapse.show {
