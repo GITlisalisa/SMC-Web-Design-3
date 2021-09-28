@@ -4,20 +4,28 @@
     --headingColor: rgb(2, 128, 144);
     --subheadingColor: rgb(5,102, 141);
     --linkColor: rgb(0, 168, 150);
-    --hoverColor: rgb(2, 195, 154);
-    --activeColor: rgb(240, 243, 189);
+    --activeColor: rgb(2, 195, 154);
+    --hoverColor: rgb(240, 243, 189);
 }
 
 .navbar{
-    position: fixed;
-  
     width: 100%;
 }
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--activeColor);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--linkColor);
+}
+/* .collapse.show {
+    background-color: var(--hoverColor);
+    opacity: .5;
+} */
 a {
     color: var(--linkColor);
     font-family: 'Cardo', serif;
 }
-p{
+p {
     font-family: 'Josefin Sans', sans-serif;
     color: black;
     font-size: 1.5rem;
@@ -25,7 +33,6 @@ p{
     line-height: 1.5;
 }
 .lead{
-    
     outline-style: solid;
     outline-color: var(--subheadingColor);
     padding: 1.5rem;

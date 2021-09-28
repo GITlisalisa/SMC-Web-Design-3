@@ -9,9 +9,14 @@
 }
 
 .navbar{
-    position: fixed;
-    /* background-color: black; */
     width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color: var(--activeColor);
+}
+.collapse.show {
+    background-color: var(--hoverColor);
+    opacity: .5;
 }
 a {
     color: var(--linkColor);
