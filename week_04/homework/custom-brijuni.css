@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Unica+One&display=swap');
+
+:root{
+    --headingColor: rgb(2, 128, 144);
+    --subheadingColor: rgb(5,102, 141);
+    --linkColor: rgb(0, 168, 150);
+    --hoverColor: rgb(2, 195, 154);
+    --activeColor: rgb(240, 243, 189);
+}
+
+.navbar{
+    position: fixed;
+  
+    width: 100%;
+}
+a {
+    color: var(--linkColor);
+    font-family: 'Cardo', serif;
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.lead{
+    
+    outline-style: solid;
+    outline-color: var(--subheadingColor);
+    padding: 1.5rem;
+}
+p.lead{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+}
+.display-1{
+    color: white;
+    font-family: 'Cardo', serif;
+}
+.display-2{
+    color: var(--headingColor);
+    font-family: 'Cardo', serif;
+}
+.display-3{
+    color: var(--subheadingColor);
+    font-family: 'Cardo', serif;
+}
+/* .container {
+    position: relative;
+    text-align: center;
+  } */
+  .jumbotron {
+    background-image: url(images/brijunijumbo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 0;
+   }
+   .container-fluid{
+  
+   }
+   .img-fluid{
+       width: 100%;
+   }
+ footer{
+    
+ }

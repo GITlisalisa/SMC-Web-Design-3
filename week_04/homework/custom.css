@@ -10,7 +10,7 @@
 
 .navbar{
     position: fixed;
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
 }
 a {
@@ -22,19 +22,23 @@ p{
     color: white;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.5;
 }
 .lead{
-    font-family: 'Crimson Text', serif;
+    
     outline-style: solid;
     outline-color: var(--subheadingColor);
     padding: 1.5rem;
 }
-.display-1,.display-2{
+p.lead{
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+}
+.display-1,.display-2, .display-3{
     color: var(--headingColor);
     font-family: 'Unica One', cursive; 
 }
-.display-3{
+.display-4{
     color: var(--subheadingColor);
     font-family: 'Unica One', cursive;
 }
