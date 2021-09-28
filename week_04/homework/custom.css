@@ -10,6 +10,7 @@
 
 .navbar{
     width: 100%;
+    
 }
 .navbar-dark .navbar-nav .nav-link.active{
     color: var(--activeColor);
