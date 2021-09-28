@@ -42,10 +42,6 @@ p.lead{
     color: var(--subheadingColor);
     font-family: 'Unica One', cursive;
 }
-/* .container {
-    position: relative;
-    text-align: center;
-  } */
   .jumbotron {
     background-image: url(images/snail.jpg);
     background-attachment: fixed;
