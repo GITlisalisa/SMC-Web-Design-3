@@ -41,13 +41,14 @@ p.lead{
 .display-2{
     color: var(--headingColor);
     font-family: 'Arvo', serif;
+  
 }
 .display-3{
     color: var(--subheadingColor);
     font-family: 'Arvo', serif;
 }
   .jumbotron {
-    background-image: url(images/brijunijumbo.jpg);
+    background-image: url(images/alamojumbo.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,12 +56,7 @@ p.lead{
     height: 100vh;
     margin-bottom: 0;
    }
-   .container-fluid{
-  
-   }
+ 
    .img-fluid{
        width: 100%;
    }
- footer{
-    
- }
