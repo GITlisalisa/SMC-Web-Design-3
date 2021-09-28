@@ -41,7 +41,18 @@ p.lead{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
 }
-.display-1{
+.display-1, .display-2, .display-3, .display-4{
+    color: var(--headingColor);
+    font-family: 'Cardo', serif;}
+h1{
+    color: white;
+    font-family: 'Cardo', serif;
+}
+h2, h3, h4{
+    color: var(--subheadingColor);
+    font-family: 'Cardo', serif;
+}
+/* .display-1{
     color: white;
     font-family: 'Cardo', serif;
 }
@@ -52,7 +63,7 @@ p.lead{
 .display-3{
     color: var(--subheadingColor);
     font-family: 'Cardo', serif;
-}
+} */
   .jumbotron {
     background-image: url(images/brijunijumbo.jpg);
     background-attachment: fixed;
@@ -71,3 +82,27 @@ p.lead{
  footer{
     
  }
+ /*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    h1 {font-size:3rem;} /*1rem = 16px*/
+  }
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    h1 {font-size:6rem;} /*1rem = 16px*/
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    h1 {font-size:9rem;} /*1rem = 16px*/
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    h1 {font-size:9rem;} /*1rem = 16px*/    
+  }
+  

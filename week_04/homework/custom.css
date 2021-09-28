@@ -14,10 +14,10 @@
 .navbar-dark .navbar-nav .nav-link.active{
     color: var(--activeColor);
 }
-.collapse.show {
+/* .collapse.show {
     background-color: var(--hoverColor);
     opacity: .5;
-}
+} */
 a {
     color: var(--linkColor);
     font-family: 'Unica One', cursive;
@@ -37,8 +37,21 @@ p{
 }
 p.lead{
     font-family: 'Crimson Text', serif;
-    font-size: 2rem;
+        font-size: 2rem;
 }
+.display-1, .display-2, .display-3, .display-4{
+    color: var(--headingColor);
+        font-family: 'Unica One', cursive;
+}
+h1{
+    color: white;
+    font-family: 'Unica One', cursive;  
+}
+h2, h3, h4{
+    color: var(--subheadingColor);
+    font-family: 'Unica One', cursive;
+}
+/* }
 .display-1,.display-2, .display-3{
     color: var(--headingColor);
     font-family: 'Unica One', cursive; 
@@ -46,7 +59,7 @@ p.lead{
 .display-4{
     color: var(--subheadingColor);
     font-family: 'Unica One', cursive;
-}
+} */
   .jumbotron {
     background-image: url(images/snail.jpg);
     background-attachment: fixed;
@@ -65,3 +78,27 @@ p.lead{
  footer{
      background-color: black;
  }
+ /*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    h1 {font-size:3rem;} /*1rem = 16px*/
+  }
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    h1 {font-size:6rem;} /*1rem = 16px*/
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    h1 {font-size:9rem;} /*1rem = 16px*/
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    h1 {font-size:9rem;} /*1rem = 16px*/    
+  }
+  
