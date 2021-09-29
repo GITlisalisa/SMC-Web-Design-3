@@ -39,11 +39,11 @@ p {
     font-weight: 400;
     line-height: 1.5;
 }
-.lead{
+/* .lead{
     outline-style: solid;
     outline-color: var(--subheadingColor);
     padding: 1.5rem;
-}
+} */
 p.lead{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;

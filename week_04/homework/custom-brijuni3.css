@@ -38,11 +38,11 @@ p {
     font-weight: 400;
     line-height: 1.5;
 }
-.lead{
+/* .lead{
     outline-style: solid;
-    outline-color: var(--subheadingColor);
+    outline-color: var(--leadColor);
     padding: 1.5rem;
-}
+} */
 p.lead{
     font-family: 'Alice', serif;
     font-size: 2rem;
