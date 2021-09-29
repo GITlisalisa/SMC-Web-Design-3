@@ -10,22 +10,24 @@
     --mattingColor:  rgb(129,178, 154);
     --jumbotronColor:  rgb(129,178, 154);
 }
-
+body{
+    background-color: var(--bgColor);
+}
 .navbar{
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
+    
 }
 
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--activeColor);
-}
+    font-size: 1.5rem;
+} 
 .navbar-light .navbar-nav .nav-link {
     color: var(--linkColor);
+    font-size: 1.5rem;
 }
-/* .collapse.show {
-    background-color: var(--hoverColor);
-    opacity: .5;
-} */
+
 a {
     color: var(--linkColor);
     font-family: 'Cardo', serif;
@@ -45,18 +47,38 @@ p {
 p.lead{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
+    color: black;
 }
-.display-1, .display-2, .display-3, .display-4{
-    color: var(--headingColor);
-    font-family: 'Cardo', serif;}
+h1.jumbo{
+    color: var(--jumbotronColor);
+    font-family: 'Cardo', serif;
+    font-size: 6rem;
+}
 h1{
-    color: white;
+    color: var(--jumbotronColor);
     font-family: 'Cardo', serif;
 }
 h2, h3, h4{
     color: var(--subheadingColor);
     font-family: 'Cardo', serif;
 }
+.display-1,{
+    color: var(--headingColor);
+    font-family: 'Cardo', serif;
+}
+.display-2{
+    color: var(--headingColor);
+    font-family: 'Cardo', serif;
+}
+.display-3 {
+    color: var(--headingColor);
+    font-family: 'Cardo', serif;
+}
+.display-4{
+    color: var(--subheadingColor);
+    font-family: 'Cardo', serif;
+}
+
 /* .display-1{
     color: white;
     font-family: 'Cardo', serif;
@@ -70,7 +92,7 @@ h2, h3, h4{
     font-family: 'Cardo', serif;
 } */
   .jumbotron {
-    background-image: url(images/brijunijumbo.jpg);
+    background-image: url(images/brijuni-dark.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +100,8 @@ h2, h3, h4{
     height: 100vh;
     margin-bottom: 0;
    }
-   .container-fluid{
+   .img-container-fluid{
+       background-color: var(--mattingColor);
   
    }
    .img-fluid{

@@ -4,28 +4,29 @@
     --subheadingColor: rgb(15,163, 177);
     --leadColor: rgb(249, 247, 243);
     --linkColor: rgb(207, 188, 113);
-    --activeColor: rgb(237, 222, 164);
-    --hoverColor: white;
+    --activeColor: rgb(247, 160, 114);
+    --hoverColor: rgb(237, 222, 164);
     --bgColor: rgb(249, 247, 243);
     --mattingColor:   rgb(247, 160, 114);
     --jumbotronColor:   rgb(247, 160, 114);
 }
-
+body{
+    background-color: var(--bgColor);
+}
 .navbar{
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--activeColor);
+    font-size: 1.5rem;
 }
 .navbar-light .navbar-nav .nav-link {
     color: var(--linkColor);
+    font-size: 1.5rem;
 }
-/* .collapse.show {
-    background-color: var(--hoverColor);
-    opacity: .5;
-} */
+
 a {
     color: var(--linkColor);
     font-family: 'Cardo', serif;
@@ -43,34 +44,42 @@ p {
     padding: 1.5rem;
 }
 p.lead{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Alice', serif;
     font-size: 2rem;
 }
-.display-1, .display-2, .display-3, .display-4{
+h1.jumbo{
+    color: var(--jumbotronColor);
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+}
+
+.display-1,{
     color: var(--headingColor);
-    font-family: 'Cardo', serif;}
-h1{
-    color: white;
-    font-family: 'Cardo', serif;
-}
-h2, h3, h4{
-    color: var(--subheadingColor);
-    font-family: 'Cardo', serif;
-}
-/* .display-1{
-    color: white;
-    font-family: 'Cardo', serif;
+    font-family: 'Sacramento', cursive;
 }
 .display-2{
     color: var(--headingColor);
-    font-family: 'Cardo', serif;
+    font-family: 'Sacramento', cursive;
 }
-.display-3{
+.display-3, {
+    color: var(--headingColor);
+    font-family: 'Sacramento', cursive;
+}
+.display-4{
     color: var(--subheadingColor);
-    font-family: 'Cardo', serif;
-} */
+    font-family: 'Alice', serif;
+}
+h1{
+    color: white;
+    font-family: 'Sacramento', cursive;
+}
+h2, h3, h4{
+    color: var(--subheadingColor);
+    font-family: 'Sacramento', cursive;
+}
+
   .jumbotron {
-    background-image: url(images/brijunijumbo.jpg);
+    background-image: url(images/brijuni-dark.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,9 +87,10 @@ h2, h3, h4{
     height: 100vh;
     margin-bottom: 0;
    }
-   .container-fluid{
-  
-   }
+   .img-container-fluid{
+    background-color: var(--mattingColor);
+
+}
    .img-fluid{
        width: 100%;
    }

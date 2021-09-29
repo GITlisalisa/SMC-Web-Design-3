@@ -9,7 +9,9 @@
     --mattingColor:  rgb(240,243, 189);
     --jumbotronColor:  rgb(240,243, 189);
 }
-
+body{
+    background-color: var(--bgColor);
+}
 .navbar{
     width: 100%;
     background-color: white;
@@ -17,9 +19,11 @@
 
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--activeColor);
+    font-size: 1.5rem;
 }
 .navbar-light .navbar-nav .nav-link {
     color: var(--linkColor);
+    font-size: 1.5rem;
 }
 /* .collapse.show {
     background-color: var(--hoverColor);
@@ -27,10 +31,10 @@
 } */
 a {
     color: var(--linkColor);
-    font-family: 'Cardo', serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 p {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cantarell', sans-serif;
     color: black;
     font-size: 1.5rem;
     font-weight: 400;
@@ -42,19 +46,43 @@ p {
     padding: 1.5rem;
 }
 p.lead{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cantarell', sans-serif;
     font-size: 2rem;
+    color: var(--leadColor);
+}
+h1.jumbo{
+    color: var(--jumbotronColor);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 6rem;
 }
 .display-1, .display-2, .display-3, .display-4{
     color: var(--headingColor);
-    font-family: 'Cardo', serif;}
+    
+    font-family: 'Fjalla One', sans-serif;
+}
+.display-1,{
+    color: var(--headingColor);
+    font-family: 'Fjalla One', sans-serif;
+}
+.display-2{
+    color: var(--headingColor);
+    font-family: 'Fjalla One', sans-serif;
+}
+.display-3, {
+    color: var(--headingColor);
+    font-family: 'Fjalla One', sans-serif;
+}
+.display-4{
+    color: var(--subheadingColor);
+    font-family: 'Fjalla One', sans-serif;
+}
 h1{
-    color: white;
-    font-family: 'Cardo', serif;
+    color: var(--headingColor);
+    font-family: 'Fjalla One', sans-serif;
 }
 h2, h3, h4{
     color: var(--subheadingColor);
-    font-family: 'Cardo', serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 /* .display-1{
     color: white;
@@ -69,7 +97,7 @@ h2, h3, h4{
     font-family: 'Cardo', serif;
 } */
   .jumbotron {
-    background-image: url(images/brijunijumbo.jpg);
+    background-image: url(images/brijuni-dark.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,9 +105,10 @@ h2, h3, h4{
     height: 100vh;
     margin-bottom: 0;
    }
-   .container-fluid{
-  
-   }
+   .img-container-fluid{
+    background-color: var(--mattingColor);
+
+}
    .img-fluid{
        width: 100%;
    }
