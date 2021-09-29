@@ -46,6 +46,7 @@ p {
 p.lead{
     font-family: 'Alice', serif;
     font-size: 2rem;
+    color: var(--leadColor);
 }
 h1.jumbo{
     color: var(--jumbotronColor);
