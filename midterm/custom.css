@@ -1,3 +1,9 @@
 .carousel-indicators [data-bs-target] {
   background-color: black;
 }
+.img-container {
+  height: 100vh;
+}
+.carousel-caption {
+padding-bottom: 5rem;
+}
