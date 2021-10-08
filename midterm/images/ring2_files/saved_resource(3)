@@ -1,0 +1,8 @@
+
+
+var scriptTag = document.createElement('script');
+scriptTag.type = 'text/javascript';
+scriptTag.src = "https://pixel.mathtag.com/sync/js?sync=auto&exsync=https%3A%2F%2Fc212.net%2Fc%2Fsync%3Fu%3D%26c%3DUS%26dmpId%3D1%26pid%3D%5BMM_UUID%5D&mt_lim=1";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(scriptTag, firstScriptTag);
+

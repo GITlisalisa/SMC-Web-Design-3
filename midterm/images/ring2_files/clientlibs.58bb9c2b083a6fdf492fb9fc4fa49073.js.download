@@ -1,0 +1,26 @@
+/** AEM-7246
+ *  Server-side control of Global-Banner
+ *  Contains logic to show/hide banner
+ */
+
+function hideBanner() {
+
+    if (document.getElementsByClassName('cmp-experiencefragment--global-banner')[0]) {
+        const globalBannerExpFragment = document.getElementsByClassName('cmp-experiencefragment--global-banner')[0];
+        const documentCookie = document.cookie;
+        const chooseCountryCookie = "geo-location-cookie=";
+        const chooseCountryCookieValue = documentCookie.substring(documentCookie.indexOf(chooseCountryCookie) + chooseCountryCookie.length, documentCookie.indexOf(chooseCountryCookie) + chooseCountryCookie.length + 2);
+        const chooseCountryClosed = document.cookie.includes("siteIdForModules");
+
+        if (documentCookie.includes(chooseCountryCookie) && chooseCountryCookieValue.toLowerCase() != 'us') {
+            if (!chooseCountryClosed) {
+                globalBannerExpFragment.classList.add('global-banner--hide');
+            }
+        }
+        if (documentCookie.includes('globalBannerVisited')) {
+            globalBannerExpFragment.classList.add('global-banner--hide');
+        }
+    }
+}
+
+hideBanner();

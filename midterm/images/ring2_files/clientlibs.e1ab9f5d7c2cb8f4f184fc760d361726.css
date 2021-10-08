@@ -1,0 +1,16 @@
+.app-js__banner{
+    display:block;
+    background:#81d8d0;   
+}
+
+@media only screen and (max-width : 1223px) {
+ 	.app-js__banner{
+        min-height:66px;
+    }
+}
+ 
+ @media only screen and (min-width : 1224px) {
+ 	.app-js__banner{
+        min-height:43px;
+    }
+}

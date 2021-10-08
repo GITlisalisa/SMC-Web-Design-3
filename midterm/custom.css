@@ -1,19 +1,18 @@
 
 
-.carousel-indicators [data-bs-target] {
-  background-color: white;
-}
 .carousel-indicators {
   bottom: -10rem;
   margin-right: 0;
   margin-left: 0;
+  width: 33%;
 }
 
 .carousel-indicators [data-bs-target] {
-  width: 33.33333%;
+  /* width: 33.33333%; */
   height: initial;
   text-indent: initial;
   flex-basis: 33%;
+  background-color: white;
 }
 
 .carousel-indicators [data-bs-target]:first-child {
