@@ -1,0 +1,12 @@
+:root{
+    --bgColor: rgb(252, 250, 240);
+    --primaryColor:  rgb(129,178, 154);
+    --secondaryColor:  rgb(129,178, 154);
+    --headingColor: rgb(61, 64, 91);
+    --subheadingColor: rgb(129,178, 154);
+    --ctaColor: black;
+    --linkColor: rgb(242, 204, 143);
+    --activeColor: rgb(243, 186, 94);
+    --hoverColor: rgb(252, 250, 240);
+    
+  }
