@@ -15,22 +15,23 @@ font-family: 'Monda', sans-serif;
 */
 
 :root{
-  --bs-font-sans-serif: "Josefin Sans", system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  --bs-body-font-family: 'Lato', sans-serif;
+  --bs-font-sans-serif: "Raleway", system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-body-font-family: 'Libre Franklin', sans-serif;
   --bgColor: #E3DCDF;
   --primaryColor:  #C6BDC1;
   --secondaryColor:  #B1A9AC;
-  --headingColor: #32292F;
-  --subheadingColor: #58504A;
-  --ctaColor: #0A2463;
-  --linkColor: #32292F;
+  --headingColor: #2E1C2B;
+  --subheadingColor: #000;
+  --ctaColor: #893168;
+  --linkColor: #893168;
   --activeColor: #B1A9AC;
   --hoverColor: #C6BDC1; 
-  --footerColor:#192A51;
-  --navColor:#A8B0C4;
+  --footerColor:#2E1C2B;
+  --navColor:#4A1942;
+
 }
 .btn{
-  background-color: var(--ctaColor);
+  background-color:var(--ctaColor);
 }
 .footer{
   background-color: var(--footerColor);
