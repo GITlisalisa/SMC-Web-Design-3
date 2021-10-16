@@ -21,13 +21,7 @@
           <a class="navbar-brand active h1 order-lg-0 flex-lg-grow-1 text-start" href="index.html">
             MIDAS
         </a>
-        <a class="nav-link active order-lg-2" aria-current="page" href="checkout.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-          </svg>
-            <span class="badge bg-light text-dark rounded-pill align-text-bottom">27</span>
-        </a>
-        <!-- <a href="shop.html" class="order-lg-2 flex-lg-grow-1 text-end"><i class="bi bi-cart2"></i></a> -->
+        <button class="nav-link active order-lg-2" aria-current="page" href="checkout.html" id="counter">0</button>
         <div class="collapse navbar-collapse order-lg-1 flex-lg-grow-1" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -73,31 +67,31 @@
     <div class="col-12 col-lg-4">
         <div class="row"  id="carousel-thumbnail-space">
             <div class="col text-white justify-content-center py-3">
-              <h1 class=" text-dark mb-3">Product 2</h1>
-              <h5 class=" text-dark mb-4">$100</h5>
+              <h1 class=" text-dark mb-3">14k Yellow Gold Petite Solitaire Diamond Necklace</h1>
+              <h5 class=" text-dark mb-4">$399</h5>
             </div>
         </div>
         <div class="row">
-            <div class="col d-grid gap-2 text-white py-3">
-            
-              <a class="text-dark btn btn-outline-dark btn-lg" href="checkout.html" role="button"
-                rel="nofollow" target="_blank">Add to Cart</a>
-            </div>
+          <div class="col d-grid gap-2 text-white py-3">
+            <button id="addToCart" class="text-light btn btn-lg">Add To Cart</button>
+      </div>
         </div>
         <div class="row">
             <div class="col justify-content-center py-3">
               <ul>
-                  <li>detail 1</li>
-                  <li>detail 2</li>
-                  <li>detail 3</li>
+                  <li>14k yellow gold and white diamond
+                  </li>
+                  <li>Average carat weight: 0.055cts
+                  </li>
+                  <li>Stone: approximately 2.4mm</li>
               </ul>
             </div>
         </div>
         <div class="row">
             <div class="col justify-content-center py-3">
-                <h3 class="text-sm-start text-md-start">Product 1 Description</h3>
+                <h3 class="text-sm-start text-md-start">Description</h3>
                 <p class="lead text-sm-start text-md-start">
-                    Fair trade, con panna pumpkin spice beans grounds macchiato kopi-luwak. That, cup cappuccino flavour dripper medium coffee. Iced, pumpkin spice qui galão dripper, extraction in caffeine café au lait chicory. Eu ristretto carajillo variety con panna cream spoon breve.
+                  Small but mighty, this delicate diamond is as classic as it comes. An elegant round diamond hangs from a delicate yellow gold chain.
                 </p>
             </div>
         </div>
@@ -106,8 +100,24 @@
       
 </section>
 </main>
-
-  <footer class="footer mt-auto  bg-light fixed-bottom">
+<footer class="d-flex flex-wrap justify-content-around  py-3 my-4 border-top">
+  <div class="row">
+  <div class="col-md-8 d-flex align-items-center flex-grow-1">
+    
+    <span class="text-muted">© 2021 Midas Jewelry, Inc</span>
+  
+  <ul class="social">
+    <li><a href="https://www.facebook.com/SantaMonicaCollegeOfficial/" style="text-decoration: none" target="_blank" title="Visit a Coffee Shop on Facebook">
+      <span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span></a></li>
+    <li><a href="https://www.instagram.com/smcedu" style="text-decoration: none;" target="_blank" title="Visit a Coffee Shop on Instagram">
+      <span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span></a></li>
+    <li><a href="https://twitter.com/SMC_edu" style="text-decoration: none;" target="_blank" title="Visit a Coffee Shop on Twitter">
+      <span class="social-icon social-twitter"><i class="fa fa-twitter"></i></span></a></li>
+</ul>
+</div>
+</div>
+</footer>
+  <!-- <footer class="footer mt-auto  bg-light fixed-bottom">
     <div class="container-fluid">
         <div class="row mx-auto">
             <div class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-evenly">
@@ -135,9 +145,17 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
+<!-- javascript for add to cart function -->
+<script>
+  var count=0
+  document.getElementById("addToCart").onclick=function(){
+      count=count+1;
+      counter.innerHTML=count
+    }
+  </script> 
 
   </body>
 </html>

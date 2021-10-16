@@ -46,11 +46,12 @@ font-family: 'Monda', sans-serif;
   border: 0 transparent;
   border-color: transparent;
 }
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, {
-  font-family: 'Josefin Sans', sans-serif!important;
+  font-family: var(--bs-font-sans-serif);
 }
 p, .lead {
-  font-family: var(--bs-font-sans-serif);
+  font-family: var(--bs-body-sans-serif);
 }
 a {
   color: var(--linkColor);
@@ -215,4 +216,7 @@ padding-bottom: 1.5rem;
     border-radius: 7px;
     margin-right: 11px;
     cursor: pointer;
+}
+.product{
+  font-family: var(--bs-body-font-family);
 }
