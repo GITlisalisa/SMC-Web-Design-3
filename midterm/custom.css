@@ -175,10 +175,10 @@ padding-bottom: 1.5rem;
     }
     #counter{
     
-      font-size:20px;
+      /* font-size:20px; */
       background:white;
-      width:30px;
-      height:30px;
+      width:40px;
+      height:40px;
       /* line-height:100px; */
       text-align:center;
       border-radius:50%;
