@@ -22,7 +22,7 @@ font-family: 'Monda', sans-serif;
   --secondaryColor:  #B1A9AC;
   --headingColor: #32292F;
   --subheadingColor: #58504A;
-  --ctaColor: #32292F;
+  --ctaColor: black;
   --linkColor: #32292F;
   --activeColor: #B1A9AC;
   --hoverColor: #C6BDC1; 
@@ -51,10 +51,19 @@ font-family: 'Monda', sans-serif;
 p, .lead {
   font-family: var(--bs-font-sans-serif);
 }
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+}
 .btn-primary {
     color: #fff;
     background-color:var(--bs-dark);
     border-color: var(--bs-dark);
+}
+.btn-secondary{
+  color: var(--linkColor);
+background-color: transparent;
+border-color: transparent;
 }
 .card{
   border: none;
@@ -173,3 +182,15 @@ padding-bottom: 1.5rem;
     flex-basis: 0 !important;
 }
     }
+    #counter{
+    
+      /* font-size:20px; */
+      background:white;
+      width:40px;
+      height:40px;
+      /* line-height:100px; */
+      text-align:center;
+      border-radius:50%;
+      border:none;
+      transition:0.2s;
+  }
