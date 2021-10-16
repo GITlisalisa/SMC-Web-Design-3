@@ -51,10 +51,19 @@ font-family: 'Monda', sans-serif;
 p, .lead {
   font-family: var(--bs-font-sans-serif);
 }
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+}
 .btn-primary {
     color: #fff;
     background-color:var(--bs-dark);
     border-color: var(--bs-dark);
+}
+.btn-secondary{
+  color: var(--linkColor);
+background-color: transparent;
+border-color: transparent;
 }
 .card{
   border: none;
