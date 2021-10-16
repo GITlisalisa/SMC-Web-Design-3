@@ -195,6 +195,9 @@ padding-bottom: 1.5rem;
       border:none;
       transition:0.2s;
   }
+  .carousel-caption{
+    
+  }
   .social {
     list-style: none;
     display: flex;
