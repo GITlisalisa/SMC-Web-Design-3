@@ -30,8 +30,9 @@ font-family: 'Monda', sans-serif;
   --footerColor:#192A51;
   --navColor:#A8B0C4;
 }
-.btn{
-  background-color: var(--ctaColor);
+
+.bg-primary {
+    background-color: var(--activeColor)!important;
 }
 .footer{
   background-color: var(--footerColor);
@@ -59,6 +60,10 @@ p, .lead {
 a {
   color: var(--linkColor);
   text-decoration: none;
+}
+.btn{
+  background-color: var(--ctaColor);
+  color:white;
 }
 .btn-primary {
     color: #fff;
