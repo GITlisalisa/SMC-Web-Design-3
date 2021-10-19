@@ -16,12 +16,12 @@ font-family: 'Monda', sans-serif;
 */
 
 :root{
-  --bs-font-sans-serif: 'Work Sans', sans-serif; 
+  --bs-font-sans-serif: 'Josefin Sans', sans-serif;
   --bs-body-font-family: 'Open Sans', sans-serif;
   --bgColor: #E3DCDF;
   --primaryColor:  #C6BDC1;
   --secondaryColor:  #B1A9AC;
-  --headingColor: #32292F;
+  --headingColor: #0F4180;
   --subheadingColor: #58504A;
   --ctaColor: #0A2463;
   --linkColor: #32292F;
@@ -48,14 +48,14 @@ font-family: 'Monda', sans-serif;
   border: 0 transparent;
   border-color: transparent;
 }
-/* body{
-  font-family: 'Lato', sans-serif;  
-} */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Work Sans', sans-serif; 
+
+h1, h2, h3, h4, h5, h6, .text-dark{
+  font-family: 'Josefin Sans', sans-serif;
+  color:#0A2463!important;
 }
-a{
-  font-family: 'Work Sans', sans-serif; 
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-5, .display-6{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #0A2463;
 }
 p, .lead {
   font-family: 'Open Sans', sans-serif;
@@ -87,7 +87,7 @@ border-color: transparent;
   border-color: var(--hoverColor);
   box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
 }
-.btn-primary:clicked {
+.btn-primary:visited {
   color: #fff;
   background-color: var(--hoverColor);
   border-color: var(--hoverColor);
@@ -246,6 +246,6 @@ padding-bottom: 1.5rem;
 }
 .alert-warning {
   color: white;
-  background-color: #1B3EBD;
-  border-color: #1B3EBD;
+  background-color: #0F4180;
+  border-color: #0F4180;
 }
