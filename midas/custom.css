@@ -75,6 +75,18 @@ a {
 background-color: transparent;
 border-color: transparent;
 }
+.btn-primary:focus {
+  color: #fff;
+  background-color: var(--hoverColor);
+  border-color: var(--hoverColor);
+  box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+.btn-primary:clicked {
+  color: #fff;
+  background-color: var(--hoverColor);
+  border-color: var(--hoverColor);
+  box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
 .card{
   border: none;
 }
