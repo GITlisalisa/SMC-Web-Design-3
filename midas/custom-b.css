@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monda:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+
+font-family: 'Work Sans', sans-serif; 
+font-family: 'Open Sans', sans-serif;
+
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Monda', sans-serif;
+*/
+
+:root{
+  --bs-font-sans-serif: "Work Sans", system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-body-font-family: 'Open Sans', sans-serif;
+  --bgColor: #E3DCDF;
+  --primaryColor:  #C6BDC1;
+  --secondaryColor:  #B1A9AC;
+  --headingColor: #32292F;
+  --subheadingColor: #58504A;
+  --ctaColor: black;
+  --linkColor: #32292F;
+  --activeColor: #B1A9AC;
+  --hoverColor: #C6BDC1; 
+  --footerColor:#C6BDC1;
+  --navColor:#E3DCDF;
+}
+.btn{
+  background-color:var(--ctaColor)
+}
+.footer{
+  background-color: var(--footerColor);
+}
+.navbar{
+  background-color: var(--navColor);
+}
+.nav-link {
+  color:var(--linkColor);
+}
+.navbar-light .navbar-toggler {
+  border: 0 transparent;
+  border-color: transparent;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, {
+  font-family: 'Josefin Sans', sans-serif!important;
+}
+p, .lead {
+  font-family: var(--bs-font-sans-serif);
+}
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+}
+.btn-primary {
+    color: #fff;
+    background-color:var(--bs-dark);
+    border-color: var(--bs-dark);
+}
+.btn-secondary{
+  color: var(--linkColor);
+background-color: transparent;
+border-color: transparent;
+}
+.card{
+  border: none;
+}
+
+.container-fluid{
+  max-width: 1280px;
+}
+
+.carousel-indicators {
+  bottom: -10rem;
+  margin-right: 0;
+  margin-left: 0;
+  width: 33%;
+}
+
+.carousel-indicators [data-bs-target] {
+  /* width: 33.33333%; */
+  height: initial;
+  text-indent: initial;
+  flex-basis: 33%;
+  background-color: white;
+}
+
+.carousel-indicators [data-bs-target]:first-child {
+  margin-left: 0;
+}
+
+.carousel-indicators [data-bs-target]:last-child {
+  margin-right: 0;
+}
+
+.carousel-caption {
+padding-bottom: 1.5rem;
+}
+.img-container {
+  height: 100vh;
+}
+.img-fluid {
+  max-width: 100%;
+  /* height: 75vh; */
+}
+.bg-image {
+  background-image: url("https://dummyimage.com/1200x800/000/aaa");
+  height: 75vh;
+}
+.card:last-child {
+  padding-bottom: 5rem;
+}
+#accordionPanelsStayOpenExample{
+  padding-bottom: 5rem!important;
+}
+#product-description{
+  padding-top: 1rem !important;
+  padding-bottom:8rem!important;
+}
+#product-price{
+  padding-top: 10rem!important;
+}
+/* #product-img{
+  padding-top: 8rem!important;
+} */
+
+/* -------------------------------mobile width  */
+@media (min-width: 375px){
+  #carousel-thumbnail-space{
+    padding-top: 10rem;
+  }
+  .carousel-indicators {
+    bottom: -10rem;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;}
+  }
+
+  /* -----------------------------tablet width */
+@media (min-width: 768px){
+  .carousel-indicators {
+      bottom: -18rem;
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+    .container-fluid{
+      max-width: 768px;
+    }
+    .container-carousel{
+      max-width: 720px;
+      padding-bottom: 18rem;
+  }
+  #carousel-thumbnail-space{
+    padding-top: 20rem;
+  }
+  }
+
+  /* ------------------------------desktop width */
+@media (min-width: 992px){
+  .carousel-indicators {
+      bottom: -16rem;
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+    .container-fluid{
+      max-width: 992px;
+    }
+    .container-carousel{
+      max-width: 992px;
+      padding-bottom: 18rem;
+      padding-top: 5rem;
+  }
+  #carousel-thumbnail-space{
+    padding-top: 0;
+  }
+  .navbar > .container-fluid > * {
+    flex-basis: 0 !important;
+}
+    }
+    #counter{
+    
+      /* font-size:20px; */
+      background:white;
+      width:40px;
+      height:40px;
+      /* line-height:100px; */
+      text-align:center;
+      border-radius:50%;
+      border:none;
+      transition:0.2s;
+  }

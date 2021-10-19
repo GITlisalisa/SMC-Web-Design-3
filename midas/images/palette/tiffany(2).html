@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!-- saved from url=(0318)https://chat.snapsmedia.io/tiffany.html?channel_id=5ec42b3fcc70a7029118a9b6&frame=true&load_fullscreen=false&parentUrl=https%3A%2F%2Fwww.tiffany.com%2Fjewelry%2Frings%2Ftiffany-knot-ring-GRP12002%2F&parentTitle=Tiffany+Knot+Ring+in+Yellow+Gold+%7C+Tiffany+%26+Co.&passThroughCookies=&appUserId=615f69c486a2108461b14eec -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Messaging Window - thread</title>
+    <link rel="stylesheet" href="./all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="./main.css" rel="stylesheet"><title>Snaps Digital Agent Messaging Console</title><style>
+    .user.bubble, .qr .snaps-btn:hover, .control-close { background-color: #d9d9d9; }
+    .bot.bubble { background-color: #81d8d0; }
+    button, a { color: #d9d9d9; }
+    .qr .snaps-btn { border-color: #d9d9d9; }
+    .lv_card_btns .snaps-btn { border-color: #d9d9d9; }
+    @media (hover) {
+      .lv_card_btns .snaps-btn:hover {
+        background-color: #d9d9d9;
+        border: 1px solid #d9d9d9;
+      }
+    }
+    
+</style><style>/*
+JD 2020-12-11: do not uncomment this
+body {
+  background: url("https://stickers.snaps.photo/5cffaf34e9ae280101ff9e5b/production/5f0cb13bea0ec201a6b8eabf.png")
+  no-repeat;
+}
+*/
+
+@font-face {
+  font-family: "Sterling Display A";
+  src: url(https://snaps-tiffany-webfonts.s3.amazonaws.com/sterling-display-roman.otf);
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Santral W01";
+  src: url(https://snaps-tiffany-webfonts.s3.amazonaws.com/sandral-light.otf);
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+    font-family: "Santral Semibold";
+    src: url(https://snaps-tiffany-webfonts.s3.amazonaws.com/taner-ardali-santral-semibold.otf);
+    font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+    font-family: "Santral Book";
+    src: url(https://snaps-tiffany-webfonts.s3.amazonaws.com/taner-ardali-santral-book-2.otf);
+    font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+    font-family: "Santral Book";
+    src: url(https://snaps-tiffany-webfonts.s3.amazonaws.com/taner-ardali-santral-book-2.otf);
+    font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+    font-family: "tiffany-icons";
+    src: url(https://snaps-tiffany-webfonts.s3.amazonaws.com/tiffany-icons.ttf);
+    font-weight: 400;
+  font-style: normal
+}
+
+
+#snaps-webbot-container, #snaps-popout-container, button {
+    font-family: 'Santral Book', sans-serif;
+}
+
+textarea#input{
+    font-family: 'Santral Book', sans-serif;
+}
+
+/* customize X */
+button#header_close {
+    height: 24px;
+    width: 24px;
+    background-image: url(https://snaps-tiffany-webfonts.s3.amazonaws.com/close.svg);
+}
+button#header_close svg {
+    display: none;
+}
+
+/* customize paperclip */
+button#upload_btn {
+    height: 30px;
+    width: 30px;
+    /* transform: rotate(-45deg); */
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://snaps-tiffany-webfonts.s3.amazonaws.com/attach.svg);
+}
+button#upload_btn svg {
+    display: none;
+}
+
+/* customize hamburger */
+button#p_menu_ctl {
+    height: 24px;
+    width: 24px;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2px;
+    background-image: url(https://snaps-tiffany-webfonts.s3.amazonaws.com/menu.svg);
+}
+button#p_menu_ctl svg {
+    display: none;
+}
+
+#snaps-webbot-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    max-width: 520px;
+    min-width: 388px;
+    width: 33.33%;
+    height: auto;
+    max-height: none;
+}
+
+.bot-avatar {
+    display: none;
+}
+
+.agent-avatar {
+    display: none;
+}
+
+.bubble.agent {
+    background-color: #81d8d0;
+}
+
+#thread ol {
+    padding: 0 14px 14px; 
+    /*font-family: Montserrat;*/
+}
+
+#snaps-webbot-container.embedded-frame {
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: calc(100% - 9px);
+  transition: right 0.3s ease-in-out;
+}
+
+#snaps-webbot-container.maximized.embedded-frame {
+  right: 0;
+  height: 100%;
+  box-shadow: -2px 0px 8px 0px rgb(0 0 0 / 13%);
+}
+
+#snaps-webbot-container.minimized.embedded-frame {
+  transform: none;
+  right: -100%;
+  height: 100%;
+}
+
+.tiffany-icons-font {
+  font-family: "tiffany-icons";
+}
+
+#header, .control-close {
+    background: #fff;
+    border-color: #fff;
+    border-color: #fafafa;
+}
+
+#header-center {
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+}
+
+#header-back {
+    color: black;
+    transform: rotate(180deg);
+    margin-left: 6px;
+    font-size: 18px;
+}
+
+.logo {
+    display: none;
+}
+
+#header-center .snaps-wb-tagline {
+    color: #000;
+    font-size: 12px;
+}
+
+#header-center .snaps-wb-headline {
+    font-family: 'Sterling Display A', sans-serif;
+    color: #000000;
+    display: inline;
+}
+
+#header svg *  {
+    fill: #000;
+}
+
+#header a:hover svg *  {
+    fill: #000;
+}
+
+.state-5ec42b44cc70a7029118aa32 .qr {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.snaps-btn {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.btn-options .snaps-btn {
+    font-family: 'Santral Semibold', sans-serif;
+    color: #000000;
+    padding-top: 10px;
+    border-color: #999;
+    padding: .8em 1em;
+    line-height: 1.5em;
+}
+
+.bot .block-body .btn-options li:first-child .snaps-btn {
+    border-color: #999;
+}
+
+.btn-options .snaps-btn li:last-child{
+    border-color: #999;
+}
+
+.btn-options .snaps-btn li:only-child{
+    border-color: #999;
+}
+
+.btn-options .snaps-btn:hover {
+    background-color: #e6f7f6;
+}
+
+.qr .snaps-btn {
+    font-family: 'Santral Semibold', sans-serif;
+    background-color: #f5f5f5;
+    border: 1px solid #666666;
+    color: #000000;
+    padding: 9px 12px 9px;
+}
+
+ .qr .snaps-btn:hover {
+    color: #000000;
+}
+
+.lv_card_btns .snaps-btn:hover {
+    color:#000000;
+} 
+
+.user.bubble {
+    //background-color: #81d8d0;
+    color: #000000;
+    padding: 6px 12px 5px;
+}
+
+.from-heading{
+    color: #000000;
+}
+
+/* main menu QRs */
+/*.state-5ec42b44cc70a7029118aa28 .qr li {
+    width: 100%;
+}
+.state-5ec42b44cc70a7029118aa28 .qr {
+    padding: 10px 2px 0px 0px;
+}
+.state-5ec42b44cc70a7029118aa28 .qr li .snaps-btn {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    //border-color: #d2d5d9;
+    margin: 3px 0;
+} */
+
+.webview-container-full {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.webview-iframe {
+  /*top: 48px;*/
+  position: unset;
+
+}
+.webview-bar {
+    background: #e6f7f6;
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 0px 8px 10px;
+    box-sizing: border-box;
+    height: unset;
+    position: unset;
+    font-weight: bold;
+    color: #000;
+}
+
+.webview-close {
+    position: unset;
+    top: 0;
+    right: 0;
+    height: auto;
+    padding: 2px 6px 2px 4px;
+}
+.webview-close button {
+    padding: 0 5px;
+}
+.webview-bar svg * {
+    fill: #000;
+}
+
+.webview-container-full {
+    border-radius: 0;
+    top: 60px;
+    height: 100%;
+    //height: calc(100% - 60px);
+}
+.webview-logo {
+    display: none;
+}
+.webview-title {
+    text-align: left;
+    color: #000;
+    line-height: 1.5;
+    font-size: 1.4em;
+    font-weight:500;
+    font-family: Santral Semibold; 
+}
+.state-5ec42b45cc70a7029118aa69 .lv_left {
+    width:100%;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_right {
+    width: 0%
+}
+
+.state-5ff8ba7741d8ed04a24604a8 .lv_left {
+    width:100%;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_right {
+    width: 0%
+}
+
+/* carousel card styling */
+.ctop {
+    border-color: #999;
+}
+
+.bot .block-body .cbottom .btn-options li:first-child .snaps-btn {
+    border-color: #999;
+}
+
+/* CSAT styling */
+.state-5ec42b44cc70a7029118aa32 .qr .snaps-btn {
+    border: none;
+    background: none;
+}
+.state-5ec42b44cc70a7029118aa32 .qr .snaps-btn:hover svg path {
+    stroke: #222;
+    fill: #222;
+}
+.state-5ec42b44cc70a7029118aa32 .qr .snaps-btn svg path {
+    stroke: #777;
+    fill: #777;
+}
+.state-5ec42b44cc70a7029118aa32 .qr {
+    justify-content: center;
+}
+
+ /* center listview cards left pane details vertically */
+.lv_item {
+    align-items: center;
+}
+
+/* order tracking listview make buttons the same */
+.state-5ec42b45cc70a7029118aa60 .lv_item .snaps-btn {
+    font-size: .9em;
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin: 6px 0 3px;
+    padding: 4px 8px;
+    line-height: normal;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+/* FAQ List view styling */
+.state-5ec42b45cc70a7029118aa69 .lv_left {
+    width:100%;
+    padding: 0;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_right {
+    width:0%;
+    padding: 0;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_item .title {
+    font-weight:400;
+    color: #1c2d40;
+    display:none;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_item .subtitle {
+    padding: 0;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_item {
+    border: 1px solid #d4dde0;
+    border-bottom: none;
+    padding: 0;
+    font-size: .94em;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_item .snaps-btn {
+    color: #1c2d40;
+    border: none;
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_card_btns .snaps-btn:hover {
+    background-color:#e6f7f6;
+    padding-right: 8px;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_item:first-child .snaps-btn {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_item:last-child .snaps-btn {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.state-5ec42b45cc70a7029118aa69 .lv_cards .lv_item:last-child {
+    border-bottom: 1px solid #d4dde0;
+}
+
+/* FAQ List view styling*/
+.state-5ff8ba7741d8ed04a24604a8 .lv_left {
+    width:100%;
+    padding: 0;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_right {
+    width:0%;
+    padding: 0;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_item .title {
+    font-weight:400;
+    color: #1c2d40;
+    display:none;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_item .subtitle {
+    padding: 0;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_item {
+    border: 1px solid #d4dde0;
+    border-bottom: none;
+    padding: 0;
+    font-size: .94em;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_item .snaps-btn {
+    color: #1c2d40;
+    border: none;
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_card_btns .snaps-btn:hover {
+    background-color:#e6f7f6;
+    padding-right: 8px;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_item:first-child .snaps-btn {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_item:last-child .snaps-btn {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.state-5ff8ba7741d8ed04a24604a8 .lv_cards .lv_item:last-child {
+    border-bottom: 1px solid #d4dde0;
+}
+
+/* don't show "End Live Chat Button" */
+a[title="End Live Chat"] {
+    display: none;
+}
+
+/* Show minimize button */
+#header-minimize {
+    display: inline;
+    color: #000;
+    transform: rotate(90deg);
+    font-size: 18px;
+}
+
+/* FAQ List view styling */
+.state-602c146cf762c421fdd04f20 .lv_left {
+    width:100%;
+    padding: 0;
+}
+.state-602c146cf762c421fdd04f20 .lv_right {
+    width:0%;
+    padding: 0;
+}
+.state-602c146cf762c421fdd04f20 .lv_item .title {
+    font-weight:400;
+    color: #1c2d40;
+    display:none;
+}
+.state-602c146cf762c421fdd04f20 .lv_item .subtitle {
+    padding: 0;
+}
+.state-602c146cf762c421fdd04f20 .lv_item {
+    border: 1px solid #d4dde0;
+    border-bottom: none;
+    padding: 0;
+    font-size: .94em;
+}
+.state-602c146cf762c421fdd04f20 .lv_item .snaps-btn {
+    color: #1c2d40;
+    border: none;
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.state-602c146cf762c421fdd04f20 .lv_card_btns .snaps-btn:hover {
+    background-color:#e6f7f6;
+    padding-right: 8px;
+}
+.state-602c146cf762c421fdd04f20 .lv_item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.state-602c146cf762c421fdd04f20 .lv_item:first-child .snaps-btn {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.state-602c146cf762c421fdd04f20 .lv_item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.state-602c146cf762c421fdd04f20 .lv_item:last-child .snaps-btn {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.state-602c146cf762c421fdd04f20 .lv_cards .lv_item:last-child {
+    border-bottom: 1px solid #d4dde0;
+}
+</style><style>/*
+  Add custom css styles below
+
+  NOTE: Override function styles will only apply within the chatbot
+  while SDK function styles will apply directly on the parent website.
+  Please check in with a relevant engineer or stakeholder before applying
+  SDK styles as they are able to impact the parent website that the SDK is on.
+
+  SDK styles added here will be visible in the <head /> section
+  of the parent website
+*/
+
+#snaps_capella_thread,
+#snaps_capella_thread.open {
+  height: 100%;
+  width: 100%; /* this should only apply in mobile */
+  bottom: 0;
+  right: 0;
+  max-height: none;
+  transition: box-shadow 0.3s;
+}
+
+/* overrides for tiffany.com */
+@media only screen and (min-width: 900px) {
+  #snaps_capella_thread.open, #snaps_capella_thread.closed {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #snaps_capella_thread.open, #snaps_capella_thread.closed {
+    width: 464px;
+  }
+}
+
+/* @media only screen and (max-width: 780px) {
+    #snaps_capella_thread.closed {
+        height: 100%;
+    }
+} */
+
+#snaps_capella_thread.closed {
+  pointer-events: none;
+  height: 100%;
+  z-index: 0;
+  width: 0;
+  /* pointer: none; */
+  /* touch-action: none; */
+}
+
+#snaps_capella_control {
+  z-index: 0;
+}
+
+#snaps_capella_notif {
+  display: none;
+}
+</style></head>
+  <body class="" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">
+    <div id="root"><div id="snaps-web-bot-sdk"><div id="snaps-webbot-container" class="minimized embedded-frame "><header id="header"><div class="header-left-button"><button id="header-back" title="Go Back" aria-label="Go Back" type="button" class="tiffany-icons-font"><span></span></button></div><div id="header-left"><img class="logo" src="./60253d2a16854b004a724f34.jpg" alt="Tiffany At Your Service Logo"></div><div id="header-center"><span class="snaps-wb-headline">Tiffany At Your Service</span><span class="snaps-wb-tagline"></span></div><div id="header-right"><div class="header-right-button"><button id="header-minimize" title="Minimize Chat Window" aria-label="Minimize Chat Window" type="button" class="tiffany-icons-font"><span></span></button><button id="header_close" title="Close chat window" aria-label="Close chat window" type="button"><svg width="12px" height="12px" class="" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path id="Path" fill="#d9d9d9" fill-rule="nonzero" d="M7.76313911,5.9996842 L11.5433245,2.21949879 C12.097878,1.66494527 12.1547229,0.814798315 11.6696465,0.329721892 C11.1845701,-0.155354531 10.3337915,-0.0985096381 9.7798696,0.456043877 L5.9996842,4.23622928 L2.21949879,0.456043877 C1.66494527,-0.0985096381 0.814798315,-0.155354531 0.329721892,0.330353501 C-0.155354531,0.816061534 -0.0985096381,1.66620849 0.456043877,2.2201304 L4.23622928,6.0003158 L0.456043877,9.78050121 C-0.0985096381,10.3350547 -0.155354531,11.1852017 0.330353501,11.6702781 C0.816061534,12.1553545 1.66620849,12.0985096 2.2201304,11.5439561 L6.0003158,7.76377072 L9.78050121,11.5439561 C10.3350547,12.0985096 11.1852017,12.1553545 11.6702781,11.6702781 C12.1553545,11.1852017 12.0985096,10.3344231 11.5439561,9.78050121 L7.76377072,6.0003158 L7.76313911,5.9996842 Z"></path></g></svg></button></div></div></header><section id="thread" class="thread hide-transcript-detail"><h1 class="offscreen">Chat Conversation Thread</h1><ol></ol></section><section id="dock" class="without-text"><h2 class="offscreen">Chat Window Form and Main Menu</h2><div id="dock_bottom" class=""><form><div id="dock_input"><textarea id="input" rows="1" wrap="soft" placeholder="Type your message" aria-label="Type your message"></textarea></div><input type="file" name="file" accept="image/png,image/jpg,image/jpeg,image/gif" aria-labelledby="upload_btn" style="display: none;"><button id="upload_btn" aria-label="Upload file" title="Upload file" type="button"><svg width="24px" height="22px" class="" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: relative; top: 1px; cursor: pointer;"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.03044 15.7584C1.27459 14.0025 1.40187 11.326 3.33349 9.39442L8.48526 4.24264C10.9042 1.82373 14.4213 1.69342 16.6675 3.93959C18.9137 6.18577 18.7834 9.70292 16.3645 12.1218L12.1218 16.3645L10.9096 15.1523L15.1523 10.9096C16.9081 9.1538 17.0354 6.73186 15.4553 5.15178C13.8752 3.5717 11.4533 3.69898 9.69745 5.45482L4.54567 10.6066C3.48925 11.663 2.9868 13.2904 4.24262 14.5462C5.49845 15.802 7.1258 15.2996 8.18222 14.2432L12.7279 9.69746C13.0928 9.3326 13.8516 8.39679 13.031 7.57614C12.2103 6.7555 11.2745 7.51432 10.9096 7.87919L6.66699 12.1218L5.45481 10.9096L9.69745 6.66701C11.1478 5.21663 12.9746 5.09541 14.2431 6.36396C15.5117 7.63251 15.3905 9.45927 13.9401 10.9096L9.3944 15.4553C7.46279 17.3869 4.78629 17.5142 3.03044 15.7584" fill="#d9d9d9"></path></svg></button><button id="send_btn" title="Send your message" aria-label="Send your message" type="button" style="padding: 7px;"><svg width="20px" height="24px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group-284" fill="#d9d9d9"><path d="M8.05618182,12.959 C4.47254545,14.5580909 2.53890909,15.4208182 1.84981818,15.5408182 L5.17618182,9.999 L14.7352727,9.999 C11.9889091,11.2053636 9.79618182,12.1826364 8.05618182,12.959 L8.05618182,12.959 Z M1.89436364,2.649 C2.62163636,2.79809091 4.55709091,3.66172727 8.08254545,5.23354545 C9.81890909,6.00809091 12.0025455,6.98081818 14.7352727,8.18081818 L5.17618182,8.18081818 L5.17527273,8.18081818 L1.89436364,2.649 Z M19.4525455,8.25627273 C14.7516364,6.21627273 11.3298182,4.69081818 8.82345455,3.57263636 C3.93527273,1.39354545 2.62163636,0.807181818 1.70527273,0.807181818 C0.919818182,0.807181818 0.533454545,1.28445455 0.407090909,1.43990909 C-0.0738181818,2.03081818 -0.132909091,2.869 0.258909091,3.52081818 L3.60072727,9.09081818 L0.259818182,14.6580909 C-0.132909091,15.3108182 -0.0738181818,16.1471818 0.407090909,16.7408182 C0.533454545,16.8971818 0.920727273,17.3744545 1.70618182,17.3744545 L1.70709091,17.3744545 C2.62163636,17.3744545 3.93072727,16.7908182 8.79709091,14.6199091 C11.3052727,13.4999091 14.7343636,11.9708182 19.4525455,9.92445455 C19.7852727,9.779 19.9998182,9.45172727 19.9998182,9.08990909 C19.9998182,8.72718182 19.7852727,8.39990909 19.4525455,8.25627273 L19.4525455,8.25627273 Z" id="Fill-148"></path></g></g></svg></button></form><button id="p_menu_ctl" type="button" class="closed" title="Open Main Menu" aria-label="Open Main Menu"><span class="pmenu-open"><svg viewBox="0 0 54 36" width="24px" height="22px" class=""><rect y="3" x="2" width="48" height="6" fill="#d9d9d9" rx="3"></rect><rect y="15" x="2" width="48" height="6" fill="#d9d9d9" rx="3"></rect><rect y="27" x="2" width="48" height="6" fill="#d9d9d9" rx="3"></rect></svg></span><span class="pmenu-close"><svg width="12px" height="22px" class="" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path id="Path" fill="#d9d9d9" fill-rule="nonzero" d="M7.76313911,5.9996842 L11.5433245,2.21949879 C12.097878,1.66494527 12.1547229,0.814798315 11.6696465,0.329721892 C11.1845701,-0.155354531 10.3337915,-0.0985096381 9.7798696,0.456043877 L5.9996842,4.23622928 L2.21949879,0.456043877 C1.66494527,-0.0985096381 0.814798315,-0.155354531 0.329721892,0.330353501 C-0.155354531,0.816061534 -0.0985096381,1.66620849 0.456043877,2.2201304 L4.23622928,6.0003158 L0.456043877,9.78050121 C-0.0985096381,10.3350547 -0.155354531,11.1852017 0.330353501,11.6702781 C0.816061534,12.1553545 1.66620849,12.0985096 2.2201304,11.5439561 L6.0003158,7.76377072 L9.78050121,11.5439561 C10.3350547,12.0985096 11.1852017,12.1553545 11.6702781,11.6702781 C12.1553545,11.1852017 12.0985096,10.3344231 11.5439561,9.78050121 L7.76377072,6.0003158 L7.76313911,5.9996842 Z"></path></g></svg></span></button></div><div id="p_menu" class="options closed-pmenu"><div><button class="snaps-btn" type="button" tabindex="-1">Main Menu</button><button class="snaps-btn" type="button" tabindex="-1">End Chat</button></div><footer id="bottom"><a class="snaps-link-out" href="https://quiq.com/?utm_source=webchat" target="_blank" rel="noreferrer" tabindex="-1"><span class="powered-by-text">powered by</span><svg width="44" height="15" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 14px; padding: 2px 0px 0px 2px;"><g clip-path="url(#clip0)"><path d="M14.0309 5.99743V5.97336C14.0309 3.51795 15.8671 1.36646 18.566 1.36646C21.2649 1.36646 23.0741 3.49087 23.0741 5.94628V5.97035C23.0741 7.08973 22.6937 8.13388 22.0227 8.96138L22.8584 9.6625C22.9843 9.77684 23.0621 9.90322 23.0621 10.0838C23.0621 10.3516 22.8465 10.5803 22.5679 10.5803C22.4151 10.5803 22.3013 10.5171 22.1875 10.4148L21.3248 9.63842C20.5789 10.2252 19.6264 10.5803 18.539 10.5803C15.8401 10.5773 14.0309 8.45285 14.0309 5.99743ZM19.0572 7.42073C19.0572 7.14089 19.2849 6.91219 19.5515 6.91219C19.7162 6.91219 19.8181 6.97539 19.9319 7.07769L21.2858 8.32346C21.7681 7.68854 22.0317 6.88511 22.0317 5.99442V5.97035C22.0317 3.94825 20.5609 2.29325 18.536 2.29325C16.5111 2.29325 15.0673 3.92117 15.0673 5.94628V5.97035C15.0673 7.99246 16.5381 9.64745 18.563 9.64745C19.3478 9.64745 20.0577 9.40673 20.6149 8.98545L19.2729 7.82696C19.1351 7.71562 19.0572 7.60128 19.0572 7.42073Z" fill="#999999"></path><path d="M32.8752 1.78498C32.8752 1.46601 33.1299 1.2644 33.4444 1.2644C33.7739 1.2644 34.0285 1.46902 34.0285 1.78498V1.95048C34.0285 2.25439 33.7739 2.47105 33.4444 2.47105C33.1269 2.47105 32.8752 2.25439 32.8752 1.95048V1.78498ZM32.9651 4.27951C32.9651 4.0117 33.1808 3.78301 33.4474 3.78301C33.7259 3.78301 33.9416 3.99966 33.9416 4.27951V9.99376C33.9416 10.2736 33.7379 10.4903 33.4594 10.4903C33.1808 10.4903 32.9651 10.2736 32.9651 9.99376V4.27951Z" fill="#999999"></path><path d="M29.6613 7.68887V4.27958C29.6613 3.99973 29.9129 3.78308 30.2095 3.78308C30.518 3.78308 30.7427 3.99973 30.7427 4.27958C30.7427 5.37789 30.7337 6.47621 30.7427 7.57152C30.7487 8.39299 30.6408 9.21748 30.0507 9.83134C29.5205 10.385 28.7507 10.6017 28.0019 10.6017H27.8131C27.0493 10.6017 26.2765 10.3429 25.7283 9.79523C25.1981 9.26262 25.0004 8.56752 24.9974 7.8303C24.9974 6.76809 24.9974 5.70288 24.9974 4.64067C24.9974 4.52031 24.9974 4.39994 24.9974 4.28259C24.9974 4.00274 25.2221 3.78609 25.5306 3.78609C25.8242 3.78609 26.0788 4.00274 26.0788 4.28259V7.69188C26.1177 10.2827 29.6104 10.2797 29.6613 7.68887Z" fill="#999999"></path><path d="M43.0297 13.485C42.7332 13.485 42.7152 13.0096 42.7092 12.9434V9.37764C42.7092 9.36861 42.7062 9.36259 42.7062 9.35357V4.27123C42.7062 3.96129 42.4546 3.71154 42.1461 3.71154C41.8376 3.71154 41.5979 3.95828 41.5979 4.27123V4.87304C40.9659 4.05156 40.1511 3.6333 39.1746 3.6333C37.632 3.6333 35.9965 4.84295 35.9965 7.08472V7.10879C35.9965 9.34153 37.635 10.5482 39.1746 10.5482C40.1511 10.5482 40.9479 10.1239 41.5979 9.25126V12.9825C41.5979 13.0006 41.6009 13.0186 41.6039 13.0337C41.6429 14.2223 42.3947 14.5442 43.0297 14.5442C43.3233 14.5442 43.5629 14.3065 43.5629 14.0116C43.5629 13.7167 43.3233 13.485 43.0297 13.485ZM41.6369 7.07569V7.09976C41.6369 8.27631 40.7622 9.54615 39.3513 9.54615C38.0843 9.54615 37.1287 8.49598 37.1287 7.09976V7.07569C37.1287 5.64337 38.0423 4.64435 39.3513 4.64435C40.4776 4.64435 41.6369 5.5531 41.6369 7.07569Z" fill="#999999"></path><path d="M0.428589 8.34161V3.4007C0.428589 1.71862 1.7316 0.349487 3.33416 0.349487H8.16281C9.76537 0.349487 11.0684 1.71862 11.0684 3.4007V7.10789C11.0684 7.5442 10.7299 7.89927 10.3135 7.89927C9.89717 7.89927 9.55869 7.5442 9.55869 7.10789V3.4007C9.55869 2.59426 8.93264 1.93527 8.16281 1.93527H3.33416C2.56434 1.93527 1.93829 2.59125 1.93829 3.4007V8.34161" fill="#999999"></path><path d="M1.93829 3.39978V8.34069C1.93829 9.14713 2.56434 9.80612 3.33416 9.80612H6.06001L7.9741 8.65966C8.26166 8.50619 8.59715 8.52726 8.86075 8.70479L11.5656 10.083C11.9401 10.2755 12.0958 10.748 11.9161 11.1421C11.7843 11.425 11.35 11.5875 11.0684 11.5875C10.9576 11.5875 10.8467 11.5604 10.7389 11.5062L8.39346 10.2304L6.7939 11.1873C6.57223 11.3197 6.31762 11.3919 6.06001 11.3919H3.33416C1.7316 11.3919 0.428589 10.0228 0.428589 8.34069V3.39978" fill="#999999"></path><path d="M3.33416 11.4014C1.7316 11.4014 0.428589 10.0323 0.428589 8.35021V3.34009H1.93829V8.35021C1.93829 9.15664 2.56434 9.81563 3.33416 9.81563L5.92821 10.3693V10.9771L3.33416 11.4014Z" fill="#999999"></path></g><defs><clippath id="clip0"><rect width="44" height="14.8649" fill="white"></rect></clippath></defs></svg></a></footer></div></section><div class="webview-veil "></div><div class="webview-container-full webview-container-closed"><div><div class="webview-bar"><div class="webview-logo"><img class="logo" src="./60253d2a16854b004a724f34.jpg" alt="Brand Logo"></div><div class="webview-title"></div><div class="webview-close"><button title="Close webview" aria-label="Close webview" type="button" tabindex="-1"><svg width="14px" height="14px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><rect id="Rectangle" fill="#d9d9d9" fill-rule="nonzero" x="4" y="20" width="36" height="6"></rect></svg></button></div></div></div><iframe class="webview-iframe" src="./saved_resource.html"></iframe></div></div></div></div>
+    <script src="./bundle.min.js.download" integrity="sha384-KMv6bBTABABhv0NI+rVWly6PIRvdippFEgjpKyxUcpEmDWZTkDOiueL5xW+cztZZ" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./build-tiffany.js.download"></script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
