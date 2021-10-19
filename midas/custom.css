@@ -225,7 +225,7 @@ padding-bottom: 1.5rem;
 }
     }
 #counter{
-    
+      padding-left: 0!important;
       font-size: 1rem;
       background:transparent;
       width:40px;
