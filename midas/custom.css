@@ -174,7 +174,7 @@ padding-bottom: 1.5rem;
     }
     .container-carousel{
       max-width: 720px;
-      padding-bottom: 18rem;
+      /* padding-bottom: 18rem; */
   }
   #carousel-thumbnail-space{
     padding-top: 20rem;
