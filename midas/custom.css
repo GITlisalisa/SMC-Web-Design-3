@@ -67,8 +67,21 @@ a {
   color: var(--linkColor);
   text-decoration: none;
 }
+a:hover{
+  color:var(--hoverColor);
+}
+a svg:hover{
+  color:var(--hoverColor);
+}
+.nav-link:hover{
+  color:var(--hoverColor)!important;
+}
 .btn{
   background-color: var(--ctaColor);
+  color:white;
+}
+.btn:hover{
+  background-color: var(--hoverColor);
   color:white;
 }
 .btn-primary {
@@ -246,6 +259,5 @@ padding-bottom: 1.5rem;
 }
 .alert-warning {
   color: white;
-  background-color: #0F4180;
-  border-color: #0F4180;
-}
+  background-color: #0A2463;
+  border-color: #0A2463;
