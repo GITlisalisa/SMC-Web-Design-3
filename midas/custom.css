@@ -16,8 +16,8 @@ font-family: 'Monda', sans-serif;
 */
 
 :root{
-  --bs-font-sans-serif: 'Josefin Sans', sans-serif;
-  --bs-body-font-family: 'Open Sans', sans-serif;
+  --bs-font-sans-serif: 'Raleway', sans-serif;
+  --bs-body-font-family: 'Libre Franklin', sans-serif;
   --bgColor: #E3DCDF;
   --primaryColor:  #C6BDC1;
   --secondaryColor:  #B1A9AC;
@@ -50,18 +50,18 @@ font-family: 'Monda', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .text-dark{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color:#0A2463!important;
 }
 .display-1, .display-2, .display-3, .display-4, .display-5, .display-5, .display-6{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #0A2463;
 }
 p, .lead {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 .product{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 a {
   color: var(--linkColor);
