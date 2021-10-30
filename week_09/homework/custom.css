@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Luckiest+Guy&display=swap');
+/* font-family: 'Luckiest Guy', cursive; */
+:root{
+    --display-font-family:'Luckiest Guy', cursive;
+    --bs-body-font-family: 'Bitter', serif;
+    --purple:#A08FB7;
+    --blue:#A0E7F5;
+    --pink:#FFD0E8;
+    --white:#FFF;
+}
+header {
+    height: 350px;
+}
+nav a{
+    font-family: var(--display-font-family);
+}
+#nav-gradient {
+    background-image: linear-gradient(rgb(255, 208, 232), rgb(176, 235, 247));
+}
