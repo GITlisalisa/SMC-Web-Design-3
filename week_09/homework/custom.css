@@ -15,8 +15,13 @@ body{
 header {
     height: 350px;
 }
-nav a{
+.navbar a{
     font-family: var(--display-font-family);
+    color: var(--white);
+}
+.navbar a:hover{
+    font-family: var(--display-font-family);
+    color: var(--purple);
 }
 #nav-gradient {
     background-image: linear-gradient(rgb(255, 208, 232), rgb(176, 235, 247));
@@ -101,4 +106,14 @@ figure.text-effect:hover p {
     transform: translateY(0px) scale(1);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+/* Nav menu effect */
+.grow { 
+    transition: all .2s ease-in-out;
+    transition: transform .2s; 
+}
+
+.grow:hover { 
+    transform: scale(2); 
 }
