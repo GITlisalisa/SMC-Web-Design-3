@@ -27,7 +27,8 @@ header {
     background-image: linear-gradient(rgb(255, 208, 232), rgb(176, 235, 247));
 }
 #cakes-bg-color{
-    background-color:rgba(255, 208, 232, 0.3);
+    background-color:#b8f3ff;
+
 
 }
 .gradient-effect:hover {
@@ -116,4 +117,8 @@ figure.text-effect:hover p {
 
 .grow:hover { 
     transform: scale(2); 
+}
+h1{
+    font-family: var(--display-font-family);
+    color: var(--purple);
 }
