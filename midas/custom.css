@@ -236,9 +236,9 @@ padding-bottom: 1.5rem;
       border:none;
       transition:0.2s;
   }
-  .carousel-caption{
+  /* .carousel-caption{
     
-  }
+  } */
   .social {
     list-style: none;
     display: flex;
@@ -261,3 +261,4 @@ padding-bottom: 1.5rem;
   color: white;
   background-color: #0A2463;
   border-color: #0A2463;
+}
