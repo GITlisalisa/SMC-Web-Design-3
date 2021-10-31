@@ -21,3 +21,45 @@ nav a{
     background-color:rgba(255, 208, 232, 0.3);
 
 }
+.gradient-effect:hover {
+    background-position: 100% 100%;
+}
+
+.gradient-effect{
+background-image: 
+linear-gradient(
+135deg, #000000 0%, #000000 25%, #ec80ab 50%, #ad74f8 75%,rgb(42, 211, 245) 100%);
+background-size: 400% 400%;
+background-repeat: no-repeat;
+display: flex;
+width:100%;
+height: 600px;
+max-width: 100vw;
+max-height: 100vh;
+justify-content: center;
+align-items: center;
+color: #fff;
+position: relative;
+cursor: pointer;
+transition: 0.5s all;
+}
+.gradient-effect-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000 url("images/cherry.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    mix-blend-mode: screen;
+}
+.gradient-effect-title {
+    text-decoration: none;
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+    font-family: var(--display-font-family);
+    color: var(--white);
+}
