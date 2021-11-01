@@ -11,14 +11,14 @@
     <title>Transformations & Transitions Homework</title>
 </head>
 <body>
-    <header class="container-fluid" id="nav-gradient">
-        <nav class="navbar navbar-expand-lg">
+    <header >
+        <nav class="navbar navbar-expand-lg" id="nav-gradient">
             <div class="container-fluid">
-              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <div class="d-flex flex-row align-items-end">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse d-flex justify-content-lg-evenly">
+              <div class="collapse navbar-collapse">
                 <ul class=" navbar-nav">
                   <li class="nav-item grow">
                     <a class="nav-link" 
@@ -35,14 +35,18 @@
                   </li>
                   </ul>
             </div>
+          </div>
             </div>
           </nav>
     </header>
     <main>
-      <div class="carousel-caption d-md-block">
-        <h1>Free Delivery On All Cakes</h1>
+      <div class="container-fluid">
+      <div class="carousel-caption d-md-block row">
+        <h1 class="text-start display-1 col-6">Free Delivery<br> On All Cakes</h1>
       </div> 
-        <img class="img-fluid" src="images/slice.jpg" alt="...">
+       
+      </div> <!-- closes container-fluid for delivery text -->
+      <img class="img-fluid" src="images/slice.jpg" alt="cake slice">
         <div class="container-fluid" id="cakes-bg-color">
             <div class="row p-4">
               <!-- cake 1 -->
@@ -89,7 +93,7 @@
 </div>
              
             </div>  <!-- closes row -->
-        </div>  <!-- closes container-fluid -->
+        </div>  <!-- closes container-fluid for grid of cakes-->
     </main>
     <footer></footer>
 </body>

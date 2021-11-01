@@ -12,9 +12,7 @@ body{
     max-width: 1440px;
     margin: auto;
 }
-header {
-    height: 350px;
-}
+
 .navbar a{
     font-family: var(--display-font-family);
     color: var(--white);
@@ -25,6 +23,7 @@ header {
 }
 #nav-gradient {
     background-image: linear-gradient(rgb(255, 208, 232), rgb(176, 235, 247));
+    height: 300px;
 }
 #cakes-bg-color{
     background-color:#b8f3ff;
