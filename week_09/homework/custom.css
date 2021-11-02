@@ -23,12 +23,24 @@ body{
 }
 #nav-gradient {
     background-image: linear-gradient(rgb(255, 208, 232), rgb(176, 235, 247));
-    height: 300px;
+    /* height: 8rem; */
 }
-#cakes-bg-color{
+.jumbotron {
+    background: url(images/slice.jpg) fixed center no-repeat;
+    background-size: cover;
+    height:50vh;
+   }
+  
+#footer-gradient {
+    background-image: linear-gradient( rgb(176, 235, 247), rgb(255, 208, 232));
+ 
+}
+/* #cakes-bg-color{
     background-color:#b8f3ff;
-
-
+} */
+footer a{
+    font-family: var(--bs-body-font-family);
+color: var(--purple);
 }
 .gradient-effect:hover {
     background-position: 100% 100%;
