@@ -9,17 +9,11 @@
 <!-- CSS only -->
     <link href="custom.css" rel="stylesheet">
     <title>Transformations & Transitions Homework</title>
+
 </head>
 <body >
     <header id="nav-gradient">
-      <!-- <div class="conatainer-fluid">
-      <div class="d-flex row justify-content-center py-3">
-        <div class="col-1">
-          <img 
-          src="images/sweet-logo.png" alt="" width="100" height="100">
-      </div>
-    </div>
-  </div> -->
+  
         <nav class="navbar navbar-expand-lg" >
               <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,8 +21,7 @@
               </button>
               <div class="collapse navbar-collapse  row d-flex">
                 <ul class="navbar-nav col-12 d-flex  align-items-end justify-content-evenly display-6">
-                  <img 
-                  src="images/sweet-logo.png" alt="" width="100" height="100">
+             
                   <li class="nav-item grow">
                     <a class="nav-link" 
                     href="#">Menu</a>
@@ -36,6 +29,9 @@
                   <li class="nav-item grow">
                     <a class="nav-link" href="#">Order</a>
                   </li>
+                  <div   onclick="myFunction()" class="logo text-center">
+                    <img id="logo-effect" src="images/sweet-logo.png" alt="" width="100" height="100" style="padding:10px"><p >Sweet Slice</p>
+                  </div>
                   <li class="nav-item grow">
                     <a class="nav-link" href="#">About</a>
                   </li>
@@ -49,56 +45,58 @@
     </header>
     <main>
       <div class="container-fluid">
-      <div class="jumbotron row ">
-        <h1 class="d-flex justify-content-center align-items-center text-start display-3 col-6 ">Free Delivery<br> On All Cakes</h1>
+      <div class="row">
+        <div  class="
+        text-start 
+        display-3 
+        col-12
+        jumbotron" >
+        <div class="col-4 ">
+        <h1> <span class="display-1" style="color: var(--blue)">Free</span> Delivery<br> On All Cakes</h1>
+      </div>
+      </div>
       </div> 
-       
       </div> <!-- closes container-fluid for delivery text -->
-      <!-- <img class="img-fluid" src="images/slice.jpg" alt="cake slice"> -->
         <div class="container-fluid" id="cakes-bg-color">
-            <div class="row p-4">
+            <div class="row">
               <!-- cake 1 -->
-                <div class="col col-md-6 col-lg-4 img-fluid p-3">
-                  <figure class="text-effect text-center">
-                  <a class="gradient-effect " style="text-decoration: none;">
+                <div class="col col-md-6 col-lg-4 p-4 align-items-stretch">
+                  <a class="gradient-effect text-effect text-center " style="text-decoration: none;">
                     <div class="gradient-effect-img">
                        <img src="images/cherry.jpg" class="img-fluid" alt="..." >
                     </div>
-                    <figcaption class="p-4"> 
+                    <div class="p-4"> 
                     <h2 class="gradient-effect-title ">Cherry-Bration</h2>
                     <p >Tart pie bonbon gummi bears I love. Donut lemon drops gummies pastry I love jelly-o lollipop sweet. Jelly beans donut sesame snaps ice cream marzipan. Caramels pastry powder macaroon ice cream biscuit liquorice lemon drops.</p>
-                  </figcaption>
+                    </div>
                   </a>
-                </figure> 
                 </div>
 <!-- cake 2 -->
-<div class="col col-md-6 col-lg-4 img-fluid p-3">
-  <figure class="text-effect text-center">
-  <a class="gradient-effect " style="text-decoration: none;">
+<div class="col col-md-6 col-lg-4 p-4 align-items-stretch">
+  <a class="gradient-effect text-effect text-center " style="text-decoration: none;">
     <div class="gradient-effect-img">
        <img src="images/luckycharms.jpg" class="img-fluid" alt="..." >
     </div>
-    <figcaption class="p-4"> 
+    <div class="p-4"> 
     <h2 class="gradient-effect-title ">Lucky Day</h2>
     <p >Biscuit macaroon I love gummi bears icing carrot cake danish. Chocolate cake sweet fruitcake danish croissant sesame snaps pudding dessert. Sugar plum muffin cupcake muffin bonbon tiramisu apple pie candy canes.</p>
-  </figcaption>
+    </div>
   </a>
-</figure> 
 </div>
 <!-- cake 3 -->
-<div class="col col-md-6 col-lg-4 img-fluid p-3">
-  <figure class="text-effect text-center">
-  <a class="gradient-effect " style="text-decoration: none;">
+<div class="col col-md-6 col-lg-4 p-4 align-items-stretch">
+  <a class="gradient-effect text-effect text-center " style="text-decoration: none;">
     <div class="gradient-effect-img">
        <img src="images/macaron.jpg" class="img-fluid" alt="..." >
     </div>
-    <figcaption class="p-4"> 
+    <div class="p-4"> 
     <h2 class="gradient-effect-title ">Parisian</h2>
     <p >Icing apple pie macaroon bonbon dessert candy. Tart chocolate bar biscuit gingerbread carrot cake shortbread I love cheesecake. Soufflé macaroon chocolate I love bonbon chocolate.</p>
-  </figcaption>
+    </div>
   </a>
-</figure> 
 </div>
+
+
              
             </div>  <!-- closes row -->
         </div>  <!-- closes container-fluid for grid of cakes-->
@@ -122,5 +120,6 @@
       </ul>
    
     </footer>
+   
 </body>
 </html>
