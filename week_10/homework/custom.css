@@ -13,51 +13,115 @@ body {
     0% {
         background-color: hsl(213, 91%, 83%);
     }
-    45% {
+    50% {
         background-color:hsl(213, 41%, 34%);
     }
     100% {
         background-color: hsl(0, 0%, 0%);}
 }
 
-
-.moon{
+.sun{ 
     position: absolute;
-    left:50vw;
-    animation: myOrbit 16s linear infinite; 
-    width: 200px;
+    left: 50vw;
+    top: 15vh;
+    width: 15vh;
+    /* offset-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0'); */
+    animation: sunAnim 12s linear infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in-out;
    
 }
-.moon {
-    /* Container. Animate along the X-axis */
+.moon{ 
+    position: absolute;
+    left: 50vw;
+    top: 15vh;
+    width: 15vh;
+    /* offset-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0'); */
+    animation: moonAnim 12s linear infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in-out;
    
-    animation: xAxis 6s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+}
+@keyframes sunAnim {
+    0%  {
+       scale: 1;
+    }
+    100%  {
+       scale: 0.001;
+    }
+}
+@keyframes moonAnim {
+    0%  {
+       scale: .001;
+    }
+    100%  {
+       scale: 1;
+    }
+}
+
+/* 
+.moon {
+    Container. Animate along the X-axis */
+    /* animation: xAxis 6s infinite ; */
+    /* animation-timing-function:ease-in-out;
   }
   
-  .moon::after {
+.moon::after {
     /* Render dot, and animate along Y-axis */
-    animation: yAxis 6s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
-  }
+    /* animation: yAxis 6s infinite ;
+    animation-timing-function:ease-in-out;
+  }  */
+  /* #motion-demo {
+    offset-path: path('M20,20 C20,100 200,0 200,100');
+    animation: move 3000ms infinite alternate ease-in-out;
+    width: 40px;
+    height: 40px;
+    background: cyan;
+  } */
+  
+/*   
+  .marker {
 
-  @keyframes yAxis {
-    50% {
-      animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-      transform: translateY(-50vh);
+    offset-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0');
+    animation: move 12s linear infinite;
+  } */
+  
+  /* @keyframes move {
+    100% { 
+      motion-offset: 100%;
+      offset-distance: 100%;
+    }
+  } */
+  @keyframes move {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
     }
   }
-  
-  @keyframes xAxis {
+
+@keyframes yAxis {
     50% {
-      animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+        animation-timing-function: ease-in;
+      transform: translateY(-50vh);
+    }
+  } 
+@keyframes xAxis {
+    50% {
+        animation-timing-function: ease-out;
       transform: translateX(50vw);
     }
   }
 
-
 @keyframes showTiredBrain {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: .75;}
+    100% {opacity: 1;}
 }
+
 @keyframes brainPulse {
    0% {
     transform: scale(1.0);
@@ -73,6 +137,28 @@ body {
         left: 15vw;
         bottom: -5vh;
     }
+    .brain-awake{
+        height: 20vh;
+        position: absolute;
+       left: 30vw;
+        bottom: 20vh;
+        animation: brainPulse 6s forwards;
+        animation-iteration-count:infinite;
+        animation-direction: alternate;
+    } 
+    .brain-tired{
+        transform: scale(.8);
+        height: 20vh;
+        position: absolute;
+        left: 30vw;
+        bottom: 20vh;
+        animation: showTiredBrain 6s forwards;
+        opacity: 0;
+        animation-iteration-count:infinite;
+        animation-direction: alternate;
+        animation-timing-function:ease-in-out;
+        z-index: 2;
+    } 
   }
   @media screen and (min-width: 768px) {
     .laptop{
@@ -96,9 +182,6 @@ body {
         position: absolute;
         left: 36vw;
         bottom: 20vh;
-        /* animation: brainPulse 5s 1s  forwards;
-        animation-iteration-count:infinite;
-        animation-direction: alternate; */
         animation: showTiredBrain 6s forwards;
         opacity: 0;
         animation-iteration-count:infinite;
@@ -106,7 +189,4 @@ body {
         animation-timing-function:ease-in-out;
         z-index: 2;
     } 
-    .brain{
-
-    }
   }
