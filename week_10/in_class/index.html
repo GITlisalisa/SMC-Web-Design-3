@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations in-class</title>
+    <style>
+        body {
+            margin: 0px;
+            overflow: hidden;
+            animation: colorBody 5s;
+            position: relative;
+            height: 100vh;
+        }
+
+        .circle {
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            animation: circleAnim 5s 2s forwards;
+            z-index: 5;
+        }
+
+        .strip {
+            height: 25vh;
+            width: 100vw;
+            position: absolute;
+        }
+
+        #strip1 {
+            background-color: hsl(45, 100%, 50%);
+            /* right: -100vw; */
+            top: 0;
+            animation-name: rightToLeft;
+            animation-duration: 3s;
+            /* animation-fill-mode: forwards; */
+        }
+
+        #strip2 {
+            background-color: hsl(105, 100%, 50%);
+            left: -100vw;
+            top: 25vh;
+            animation-name: leftToRight;
+            animation-delay: 1s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        #strip3 {
+            background-color: hsl(195, 100%, 50%);
+            top: 50vh;
+            animation-name: rightToLeft;
+            animation-duration: 4s;
+        }
+
+        #strip4 {
+            background-color: hsl(265, 100%, 50%);
+            top: 75vh;
+            animation-name: leftToRight;
+            animation-duration: 4s;
+        }
+
+        main {
+            width: 960px;
+            position: absolute;
+            top: 20vh;
+            left: 10vw;
+            animation: showMain 3s 5500ms forwards;
+            opacity: 0;
+            z-index: 10;
+        }
+
+
+        /* ANIMATIONS */
+        @keyframes rightToLeft {
+            from {right: -100vw;}
+            to {right: 0;}
+        }
+
+        @keyframes leftToRight {
+            from {left: -100vw;}
+            to {left: 0;}
+        }
+
+        @keyframes colorBody {
+            from {background-color: hsl(0, 100%, 100%);}
+            to {background-color: hsl(0, 100%, 50%);}
+        }
+
+        @keyframes circleAnim {
+            0% {
+                background-color: hsl(105, 100%, 50%);
+                width: 1vw; 
+                height: 1vh;
+            }
+            15% {
+                background-color: hsl(195, 100%, 50%);
+            }
+
+            30% {
+                background-color: hsl(45, 100%, 50%);
+            }
+
+            45% {
+                background-color: hsl(265, 100%, 50%);
+            }
+            60% {
+                background-color: hsl(0, 100%, 50%);
+            }
+            100% {
+                background-color: hsl(0, 100%, 50%);
+                width: max(150vw, 150vh);
+                height: max(150vw, 150vh);
+            }
+        }
+
+        @keyframes showMain {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="strip" id="strip1"></div>
+    <div class="strip" id="strip2"></div>
+    <div class="strip" id="strip3"></div>
+    <div class="strip" id="strip4"></div>
+    <main>
+        <h1>Welcome to the world of CSS animation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto ducimus reiciendis amet assumenda a nihil explicabo numquam minima debitis. Nulla temporibus adipisci in modi cum voluptas numquam rem facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nesciunt molestias eius excepturi, magnam officia incidunt, aut voluptatum illum possimus officiis. Deserunt eveniet aspernatur ad minima veritatis quibusdam eius provident!</p>
+    </main>
+</body>
+</html>

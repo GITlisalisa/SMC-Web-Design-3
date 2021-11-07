@@ -29,6 +29,8 @@ h1{
 }
 #logo-effect:hover {
     transform: rotate(360deg);
+    transition: 2s;
+    animation-iteration-count: infinite;
 }
 .mystyle {
     color: black;
