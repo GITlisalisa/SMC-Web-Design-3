@@ -19,7 +19,28 @@ body {
     100% {
         background-color: hsl(0, 0%, 0%);}
 }
-
+.typing {
+  width: 18ch;
+  animation: typingAnim 2s steps(18), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  background-color: white;
+  color: black;
+}
+@keyframes typingAnim {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 
  .sun{ 
   position: absolute;
@@ -42,39 +63,41 @@ body {
 @keyframes sunAnim {
   0% {
     top:25vh;
-    transform: scale(1.25);
+    transform: scale(1.5);
   }
   50% {
-    top:110vh;
-    transform: scale(.25);
+    top:100vh;
+    transform: scale(.1);
   }
   100% {
     top: 25vh;
-    transform: scale(1.25);
+    transform: scale(1.5);
   }
   } 
 
 @keyframes moonAnim {
   0% {
-    top:110vh;
-    transform: scale(.25);
+    top:100vh;
+    transform: scale(.1);
+    
   }
   50% {
     top:25vh;
-    transform: scale(1.25);
+    transform: scale(1.5);
+   
   }
   100% {
-    top: 110vh;
-    transform: scale(.25);
+    top: 100vh;
+    transform: scale(.1);
+    
   }
   }
 
 @keyframes showTiredBrain {
     0% {opacity: 0;}
-    25% {opacity: 0;}
-    50% {opacity: 0;}
-    75% {opacity: .75;}
+    75% {opacity: 1;}
     100% {opacity: 1;}
+   
 }
 
 @keyframes brainPulse {
@@ -85,63 +108,36 @@ body {
     transform: scale(.8);
     }
 }
-@media screen and (min-width: 375px) {
-    .laptop {
-        height: 33vh;
-        position: absolute;
-        left: 15vw;
-        bottom: -5vh;
-    }
-    .brain-awake{
-        height: 20vh;
-        position: absolute;
-       left: 30vw;
-        bottom: 20vh;
-        animation: brainPulse 6s forwards;
-        animation-iteration-count:infinite;
-        animation-direction: alternate;
-    } 
-    .brain-tired{
-        transform: scale(.8);
-        height: 20vh;
-        position: absolute;
-        left: 30vw;
-        bottom: 20vh;
-        animation: showTiredBrain 6s forwards;
-        opacity: 0;
-        animation-iteration-count:infinite;
-        animation-direction: alternate;
-        animation-timing-function:ease-in-out;
-        z-index: 2;
-    } 
+.laptop {
+  height: 50vh;
+  position: fixed;
+  bottom: 0px;
+}
+
+.brains{
+  padding-top: 10vh;
+  animation: brainPulse 6s forwards;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+.brain-awake{
+  width: 20vw;
+  position: absolute;
+
+  
+} 
+.brain-tired{
+  width: 20vw;
+  position: absolute;
+  animation: showTiredBrain 6s forwards;
+  opacity: 0;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-timing-function:ease-in-out;
+  z-index: 2;
+} 
+@media only screen and (max-width: 600px) {
+  .brains{
+    transform: scale(2);
   }
-  @media screen and (min-width: 768px) {
-    .laptop{
-        height: 33vh;
-        position: absolute;
-        left: 33vw;
-        bottom: -5vh;
-    } 
-    .brain-awake{
-        height: 20vh;
-        position: absolute;
-        left: 36vw;
-        bottom: 20vh;
-        animation: brainPulse 6s forwards;
-        animation-iteration-count:infinite;
-        animation-direction: alternate;
-    } 
-    .brain-tired{
-        transform: scale(.8);
-        height: 20vh;
-        position: absolute;
-        left: 36vw;
-        bottom: 20vh;
-        animation: showTiredBrain 6s forwards;
-        opacity: 0;
-        animation-iteration-count:infinite;
-        animation-direction: alternate;
-        animation-timing-function:ease-in-out;
-        z-index: 2;
-    } 
-  }
+}
