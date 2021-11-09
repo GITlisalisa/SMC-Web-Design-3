@@ -20,98 +20,53 @@ body {
         background-color: hsl(0, 0%, 0%);}
 }
 
-.sun{ 
-    position: absolute;
-    left: 50vw;
-    top: 15vh;
-    width: 15vh;
-    /* offset-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0'); */
-    animation: sunAnim 12s linear infinite;
-    animation-direction: alternate;
-    animation-timing-function:ease-in-out;
-   
+
+ .sun{ 
+  position: absolute;
+  left: 10vw;
+  top: 20vh;
+  width: 15vh;
+  animation: sunAnim 12s linear infinite;
+  animation-timing-function:ease-in-out;
 }
+
 .moon{ 
-    position: absolute;
-    left: 50vw;
-    top: 15vh;
-    width: 15vh;
-    /* offset-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0'); */
-    animation: moonAnim 12s linear infinite;
-    animation-direction: alternate;
-    animation-timing-function:ease-in-out;
-   
+  position: absolute;
+  right: 10vw;
+  width: 12vh;
+  animation: moonAnim 12s linear infinite ; 
+  animation-timing-function:ease-in-out;
 }
+
+
 @keyframes sunAnim {
-    0%  {
-       scale: 1;
-    }
-    100%  {
-       scale: 0.001;
-    }
-}
-@keyframes moonAnim {
-    0%  {
-       scale: .001;
-    }
-    100%  {
-       scale: 1;
-    }
-}
-
-/* 
-.moon {
-    Container. Animate along the X-axis */
-    /* animation: xAxis 6s infinite ; */
-    /* animation-timing-function:ease-in-out;
+  0% {
+    top:25vh;
+    transform: scale(1.25);
   }
-  
-.moon::after {
-    /* Render dot, and animate along Y-axis */
-    /* animation: yAxis 6s infinite ;
-    animation-timing-function:ease-in-out;
-  }  */
-  /* #motion-demo {
-    offset-path: path('M20,20 C20,100 200,0 200,100');
-    animation: move 3000ms infinite alternate ease-in-out;
-    width: 40px;
-    height: 40px;
-    background: cyan;
-  } */
-  
-/*   
-  .marker {
-
-    offset-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0');
-    animation: move 12s linear infinite;
-  } */
-  
-  /* @keyframes move {
-    100% { 
-      motion-offset: 100%;
-      offset-distance: 100%;
-    }
-  } */
-  @keyframes move {
-    0% {
-      offset-distance: 0%;
-    }
-    100% {
-      offset-distance: 100%;
-    }
+  50% {
+    top:110vh;
+    transform: scale(.25);
   }
-
-@keyframes yAxis {
-    50% {
-        animation-timing-function: ease-in;
-      transform: translateY(-50vh);
-    }
+  100% {
+    top: 25vh;
+    transform: scale(1.25);
+  }
   } 
-@keyframes xAxis {
-    50% {
-        animation-timing-function: ease-out;
-      transform: translateX(50vw);
-    }
+
+@keyframes moonAnim {
+  0% {
+    top:110vh;
+    transform: scale(.25);
+  }
+  50% {
+    top:25vh;
+    transform: scale(1.25);
+  }
+  100% {
+    top: 110vh;
+    transform: scale(.25);
+  }
   }
 
 @keyframes showTiredBrain {
