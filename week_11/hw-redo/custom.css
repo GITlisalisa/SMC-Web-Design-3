@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+#display-header{
+  font-family: 'Rye', cursive;
+  color: yellow;
+  background-color: red;
+  
+}
+
+body{
+  background: repeating-linear-gradient(
+    to right,
+    #fff,
+    #fff 40px,
+    #FF0000 40px,
+    #FF0000 80px
+  );
+}
+
+/* .stripe {
+  color: white;
+  background: repeating-radial-gradient(
+    circle,
+    purple,
+    purple 10px,
+    #4b026f 10px, 
+    #4b026f 20px
+  );
+} */
+
 #click-animation{
     animation: colorBody 500ms;
     animation-iteration-count:infinite;
@@ -10,12 +40,15 @@
     100% {
         background-color: rgb(247, 243, 3);}
 }
+
 #clickCount{
     color: yellow;
 }
-#control-pad{
+
+.control-pad{
    background-color: black;
    color: white;
+ 
 }
 .slider {
     -webkit-appearance: none;

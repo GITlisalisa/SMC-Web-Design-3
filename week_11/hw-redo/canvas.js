@@ -89,7 +89,7 @@ canvas.addEventListener("click", function(event){
   
    let mouseXp = event.pageX - event.target.offsetLeft;
    let mouseYp = event.pageY - event.target.offsetTop;
-   //console.log("Mouse X: " + mouseXp + " Mouse Y: " + mouseYp);
+   console.log("Mouse X: " + mouseXp + " Mouse Y: " + mouseYp);
 
    let distX = Math.abs(cPosX - mouseXp);
    let distY = Math.abs(cPosY - mouseYp);
@@ -97,7 +97,7 @@ canvas.addEventListener("click", function(event){
    if(distX < cRadius && distY < cRadius){
     console.log("HIT!!!");
     ++counterVal;
-    document.getElementById("clickCount").innerHTML =  "Ball Click Counter: " + counterVal;
+    document.getElementById("clickCount").innerHTML =  "Click Counter: " + counterVal;
     cVelX = cVelX * 1.25;
     cVelY = cVelY * 1.25;
     // document.getElementById("game").style.backgroundColor = "black";
