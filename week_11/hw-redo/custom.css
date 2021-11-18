@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 
-#display-header{
-  font-family: 'Rye', cursive;
-  color: yellow;
-  background-color: red;
-  
-}
 
 body{
   background: repeating-linear-gradient(
@@ -17,16 +11,17 @@ body{
   );
 }
 
-/* .stripe {
-  color: white;
-  background: repeating-radial-gradient(
-    circle,
-    purple,
-    purple 10px,
-    #4b026f 10px, 
-    #4b026f 20px
-  );
-} */
+#display-header{
+  font-family: 'Rye', cursive;
+  color: yellow;
+  background-color: red;
+  
+}
+
+ .clown{
+   padding: 20px;
+   width: 100px;
+ }
 
 #click-animation{
     animation: colorBody 500ms;
@@ -39,6 +34,12 @@ body{
     }
     100% {
         background-color: rgb(247, 243, 3);}
+}
+#game{
+  background-color: black;
+  width:1000px;
+
+  
 }
 
 #clickCount{
