@@ -11,6 +11,9 @@ let cRadius = 60;
 let newRadiusValue = 90;
 let ballColor = "hsl(180, 50%, 50%)";
 
+var audio = new Audio('sound.mp3');
+
+
 // Function to draw canvas 
 function draw(){
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -80,7 +83,11 @@ let calculateSize = function(){
 }
 
 sizeSlider.addEventListener("change", calculateSize);
-
+function canvasPressed() {
+    // playing a sound file on a user gesture
+    // is equivalent to `userStartAudio()`
+    mySound.play();
+  }
 
 // Function to count number times ball is clicked
 var counterVal = 0;
@@ -103,8 +110,8 @@ canvas.addEventListener("click", function(event){
     // document.getElementById("game").style.backgroundColor = "black";
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     document.getElementById("game").style.backgroundColor = "#" + randomColor;
-    color.innerHTML = "#" + randomColor;
-
+    // color.innerHTML = "#" + randomColor;
+    audio.play();
 }
 });
 
