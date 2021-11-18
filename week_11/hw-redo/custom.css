@@ -37,9 +37,8 @@ body{
 }
 #game{
   background-color: black;
-  width:1000px;
+  width: 100vw;
 
-  
 }
 
 #clickCount{
