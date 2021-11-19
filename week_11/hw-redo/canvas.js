@@ -84,7 +84,7 @@ canvas.addEventListener("click", function(event){
   
    let mouseXp = event.pageX - event.target.offsetLeft;
    let mouseYp = event.pageY - event.target.offsetTop;
-//    console.log("Mouse X: " + mouseXp + " Mouse Y: " + mouseYp);
+   console.log("Mouse X: " + mouseXp + " Mouse Y: " + mouseYp);
 
    let distX = Math.abs(cPosX - mouseXp);
    let distY = Math.abs(cPosY - mouseYp);
