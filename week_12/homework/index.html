@@ -16,11 +16,10 @@
       
         <h1 class=" col-12 display-1 p-3 m-0 d-flex  justify-content-center" id="display-header"><img class ="clown" src="clown.png" alt="clown face" > Lisa's Ball Game <img class ="clown" src="clown.png" alt="clown face" ></h1>
         <h1 class="col-12 display-4  d-flex  justify-content-center m-0"  id="click-animation">Click on the ball</h1>
-        <div  class="col-12 d-flex justify-content-center control-pad"  >
-        <canvas id="game" width="800" height="400" >
+        <div class="col-12 d-flex justify-content-center control-pad" id="canvasParent">
+        <canvas>
         </canvas>
-      
-    </div>
+        </div>
         <div class="col-12 display-6 d-flex justify-content-center p-3 control-pad" >
         
             <h1 id="clickCount" >Click Counter: 0</h1>
@@ -45,9 +44,10 @@
     </div>
     
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="canvas.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
 
 </body>
 </html>

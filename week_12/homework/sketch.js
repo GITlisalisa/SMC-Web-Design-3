@@ -1,9 +1,11 @@
 // Starts the canvas 
-const canvas = document.getElementById("game");
-const context = canvas.getContext('2d');
+function setup(){
+    let myCanvas = createCanvas(600,300); 
+    myCanvas.parent('canvasParent');
+}
 
-let cPosX = canvas.width/2;
-let cPosY = canvas.height/2;
+let cPosX = myCanvas.width/2;
+let cPosY = myCanvas.height/2;
 let cVelX = 2;
 let cVelY = 1;
 let cRadius = 50;
@@ -13,7 +15,7 @@ var audio = new Audio('sound.mp3');
 
 
 function draw(){
-    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.clearRect(0, 0, myCanvas.width, myCanvas.height);
     drawCircle();
     moveCircle();
     window.requestAnimationFrame(draw);
@@ -32,7 +34,7 @@ function drawCircle(){
 
 // Function for ball to be redrawn as it moves
 function moveCircle(){
-    if(cPosX+cRadius >= canvas.width || cPosX-cRadius  <= 0)
+    if(cPosX+cRadius >= myCanvas.width || cPosX-cRadius  <= 0)
     {
         cVelX *= -1;
     }
@@ -44,7 +46,6 @@ function moveCircle(){
     cPosY = cPosY + cVelY;
 }
 draw();
-
 
   
 const hueSlider = document.getElementById("hueValue");
@@ -72,7 +73,7 @@ lightnessSlider.addEventListener("change", calculateColor);
 //     let valueR = sizeSlider.value;
 //     let newRadiusValue = valueR;
 //     cRadius = newRadiusValue;
-//     console.log("Size change!!!");
+//     console.log("Size change");
 // }
 
 // sizeSlider.addEventListener("change", calculateSize);
@@ -96,13 +97,8 @@ canvas.addEventListener("click", function(event){
     cVelX = cVelX * 1.5;
     cVelY = cVelY * 1.5;
     audio.play();
-    
+  
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     document.getElementById("game").style.backgroundColor = "#" + randomColor;
 }
 });
-
-
-
-
-
