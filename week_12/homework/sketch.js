@@ -1,104 +1,97 @@
-// Starts the canvas 
-function setup(){
-    let myCanvas = createCanvas(600,300); 
-    myCanvas.parent('canvasParent');
-}
+let posX;
+let posY;
 
-let cPosX = myCanvas.width/2;
-let cPosY = myCanvas.height/2;
-let cVelX = 2;
-let cVelY = 1;
-let cRadius = 50;
-// let newRadiusValue = 90;
-let ballColor = "hsl(180, 50%, 50%)";
+let velx; 
+let velY;
+
+let radius;
+let circleClr;
+
+
 var audio = new Audio('sound.mp3');
 
+//UI
+let sliderHue;
+let clickCounter;
+// let sliderSize;
 
-function draw(){
-    context.clearRect(0, 0, myCanvas.width, myCanvas.height);
-    drawCircle();
-    moveCircle();
-    window.requestAnimationFrame(draw);
+// Starts the canvas 
+function setup(){ // setup runs once, sets up the canvas
+    let myCanvas = createCanvas(800, 600);
+    myCanvas.parent('canvasParent');
+
+    colorMode(HSB, 360, 100, 100);
+    sliderHue = createSlider(0, 360, 0, 15);
+    sliderHue.parent('canvasUI');
+    sliderHue.style('width', '300px'); // need to change styling 
+
+    // sliderSize = createSlider();
+    // sliderSize.parent('ballSize');
+    // sliderSize.style('width', '300px'); 
+
+    posX = width/2;
+    posY = height/2;
+   
+    velX = 2;
+    velY = 1;
+
+    radius = 50;
+    circleClr = color(0, 80, 100);
+
+    clickCounter = 0;
 }
 
-function drawCircle(){
-    context.beginPath();
-    context.strokeStyle = "black";
-    context.lineWidth = 2;
-    context.fillStyle = ballColor; // define as: #FF0CE2 , rgb(255, 128, 35), "wheat"
-    context.ellipse(cPosX, cPosY, cRadius, cRadius, 0, 0, 2*Math.PI);
-    context.stroke();
-    context.fill();
+function draw(){ // draw runs on a loop over and over in the canvas
+    background (0, 0, 0); // draws new background each time new ball drawn
     
-}
+// draws ball
+    noStroke();
+    circleClr = color(sliderHue.value(), 80, 100);
+    fill(circleClr);
+    circle(posX, posY, radius * 2);
 
-// Function for ball to be redrawn as it moves
-function moveCircle(){
-    if(cPosX+cRadius >= myCanvas.width || cPosX-cRadius  <= 0)
-    {
-        cVelX *= -1;
+// makes ball bounce off walls
+    if (posX + radius >= width || posX - radius <=0){
+        velX = velX * -1;
     }
-    if(cPosY+cRadius >= canvas.height || cPosY-cRadius <= 0)
-    {
-        cVelY = cVelY * -1;
+    if (posY + radius >= height || posY - radius <=0){
+        velY = velY * -1;
     }
-    cPosX = cPosX + cVelX;
-    cPosY = cPosY + cVelY;
-}
-draw();
+    posX += velX; 
+    posY += velY;
+s;
+    
+    } // end of draw 
 
-  
-const hueSlider = document.getElementById("hueValue");
-const saturationSlider = document.getElementById("satValue");
-const lightnessSlider = document.getElementById("lightValue");
+    function mouseReleased() {
+        if (dist(mouseX, mouseY, posX, posY) < radius){
+            console.log("HIT");
+            clickCounter++;
+            audio.play();
 
-let calculateColor = function(){
-    let valueH = hueSlider.value;
-    let valueS = saturationSlider.value;
-    let valueL = lightnessSlider.value;
-    let colValue = "hsl(" + valueH + ", " + valueS  + "% "  + ", " + valueL  + "%"  + ")";
-    ballColor = colValue;
-}
+            document.getElementById("clickCount").innerHTML =  "Click Counter: " + clickCounter;
 
-// slider controls to change ball color
-hueSlider.addEventListener("change", calculateColor);
-saturationSlider.addEventListener("change", calculateColor);
-lightnessSlider.addEventListener("change", calculateColor);
+            // const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            // document.getElementById("game").style.backgroundColor = "#" + randomColor;
 
+            // circleClr = color(255, 0, 0);
+            // radius +=10;
+    
+            if(velX >0 ){
+                velX++;
+            }
+            else {
+                velX--;
+            }
+            if(velY >0 ){
+                velY++;
+            }
+            else {
+                velY--;
+            }
+        }
+        else{
+            // circleClr = color(0, 80, 100);
+        }
+    }
 
-// funtion to change ball size 
-// const sizeSlider = document.getElementById("ballSize");
-
-// let calculateSize = function(){
-//     let valueR = sizeSlider.value;
-//     let newRadiusValue = valueR;
-//     cRadius = newRadiusValue;
-//     console.log("Size change");
-// }
-
-// sizeSlider.addEventListener("change", calculateSize);
-
-// Function to count number times ball is clicked
-var counterVal = 0;
-canvas.addEventListener("click", function(event){
-  
-   let mouseXp = event.pageX - event.target.offsetLeft;
-   let mouseYp = event.pageY - event.target.offsetTop;
-   console.log("Mouse X: " + mouseXp + " Mouse Y: " + mouseYp);
-
-   let distX = Math.abs(cPosX - mouseXp);
-   let distY = Math.abs(cPosY - mouseYp);
-
-
-   if(distX < cRadius && distY < cRadius){
-    console.log("HIT");
-    ++counterVal;
-    document.getElementById("clickCount").innerHTML =  "Click Counter: " + counterVal;
-    cVelX = cVelX * 1.5;
-    cVelY = cVelY * 1.5;
-    audio.play();
-  
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    document.getElementById("game").style.backgroundColor = "#" + randomColor;
-}
-});

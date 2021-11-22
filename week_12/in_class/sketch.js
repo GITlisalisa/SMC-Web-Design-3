@@ -66,6 +66,7 @@ function mouseReleased() {
         clickCounter++;
         // circleClr = color(255, 0, 0);
         // radius +=10;
+
         if(velX >0 ){
             velX++;
         }

@@ -5,12 +5,14 @@ body{
   background: repeating-linear-gradient(
     to right,
     #fff,
-    #fff 40px,
-    #FF0000 40px,
-    #FF0000 80px
+    #fff 50px,
+    #FF0000 50px,
+    #FF0000 100px
   );
 }
-
+.container {
+  background-color: black;
+}
 #display-header{
   font-family: 'Rye', cursive;
   color: yellow;
