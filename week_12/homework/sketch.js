@@ -36,7 +36,7 @@ function setup(){ // setup runs once, sets up the canvas
     velY = 1;
 
     radius = 50;
-    circleClr = color(0, 80, 100);
+    circleClr = color(0, 100, 50);
 
     clickCounter = 0;
 

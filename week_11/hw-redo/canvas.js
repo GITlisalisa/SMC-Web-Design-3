@@ -8,7 +8,7 @@ let cVelX = 2;
 let cVelY = 1;
 let cRadius = 50;
 // let newRadiusValue = 90;
-let ballColor = "hsl(180, 50%, 50%)";
+let ballColor = "hsl(0, 100%, 50%)";
 var audio = new Audio('sound.mp3');
 
 let lights = [];
