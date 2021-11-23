@@ -40,7 +40,10 @@ function setup(){ // setup runs once, sets up the canvas
 
     clickCounter = 0;
 
-
+    audio.addEventListener("canplaythrough", event => {
+        /* the audio is now playable; play it if permissions allow */
+        audio.play();
+      });
 }
 
 function draw(){ // draw runs on a loop over and over in the canvas

@@ -67,7 +67,7 @@ lightnessSlider.addEventListener("change", calculateColor);
 
 audio.addEventListener("canplaythrough", event => {
     /* the audio is now playable; play it if permissions allow */
-    myAudioElement.play();
+    audio.play();
   });
 // funtion to change ball size 
 // const sizeSlider = document.getElementById("ballSize");
@@ -104,15 +104,8 @@ canvas.addEventListener("click", function(event){
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     document.getElementById("game").style.backgroundColor = "#" + randomColor;
 
-    for (i = 1; i < 18; i++) {
-        lights.push({
-            x: random(100) + 150,
-            y: random(180) + 120,
-            color: random(80),
-            s: random(5)
-         });
-      }
 
+    
 }
 });
 
