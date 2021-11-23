@@ -11,6 +11,7 @@ let cRadius = 50;
 let ballColor = "hsl(180, 50%, 50%)";
 var audio = new Audio('sound.mp3');
 
+let lights = [];
 
 function draw(){
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -64,7 +65,10 @@ hueSlider.addEventListener("change", calculateColor);
 saturationSlider.addEventListener("change", calculateColor);
 lightnessSlider.addEventListener("change", calculateColor);
 
-
+audio.addEventListener("canplaythrough", event => {
+    /* the audio is now playable; play it if permissions allow */
+    myAudioElement.play();
+  });
 // funtion to change ball size 
 // const sizeSlider = document.getElementById("ballSize");
 
@@ -99,6 +103,16 @@ canvas.addEventListener("click", function(event){
     
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     document.getElementById("game").style.backgroundColor = "#" + randomColor;
+
+    for (i = 1; i < 18; i++) {
+        lights.push({
+            x: random(100) + 150,
+            y: random(180) + 120,
+            color: random(80),
+            s: random(5)
+         });
+      }
+
 }
 });
 

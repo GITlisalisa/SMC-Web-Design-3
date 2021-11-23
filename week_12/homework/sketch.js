@@ -39,6 +39,8 @@ function setup(){ // setup runs once, sets up the canvas
     circleClr = color(0, 80, 100);
 
     clickCounter = 0;
+
+
 }
 
 function draw(){ // draw runs on a loop over and over in the canvas
@@ -59,7 +61,7 @@ function draw(){ // draw runs on a loop over and over in the canvas
     }
     posX += velX; 
     posY += velY;
-s;
+
     
     } // end of draw 
 
