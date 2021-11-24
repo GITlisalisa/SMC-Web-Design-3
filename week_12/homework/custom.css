@@ -52,7 +52,13 @@ body{
    color: white;
  
 }
-.slider {
+.sliderLabel {
+  font-size: 1.5rem;
+  color: white;
+}
+.mySliders {
+    font-size: 2rem;
+    color: yellow;
     -webkit-appearance: none;
     width: 100%;
     height: 15px;
@@ -63,8 +69,7 @@ body{
     -webkit-transition: .2s;
     transition: opacity .2s;
   }
-  
-  .slider::-webkit-slider-thumb {
+  .mySliders::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 25px;
@@ -74,7 +79,7 @@ body{
     cursor: pointer;
   }
   
-  .slider::-moz-range-thumb {
+  .mySliders::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -82,6 +87,6 @@ body{
     cursor: pointer;
   }
   /* Mouse-over effects */
-  .slider:hover {
+  .mySliders:hover {
     opacity: 1; /* Fully shown on mouse-over */
   }

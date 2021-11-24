@@ -23,7 +23,7 @@ function setup(){ // setup runs once, sets up the canvas
     colorMode(HSB, 360, 100, 100);
     sliderHue = createSlider(0, 360, 0, 15);
     sliderHue.parent('canvasUI');
-    sliderHue.style('width', '300px'); // need to change styling 
+    sliderHue.addClass("mySliders");
 
     // sliderSize = createSlider();
     // sliderSize.parent('ballSize');
