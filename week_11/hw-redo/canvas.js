@@ -11,8 +11,6 @@ let cRadius = 50;
 let ballColor = "hsl(0, 100%, 50%)";
 var audio = new Audio('sound.mp3');
 
-let lights = [];
-
 function draw(){
     context.clearRect(0, 0, canvas.width, canvas.height);
     drawCircle();
@@ -28,7 +26,6 @@ function drawCircle(){
     context.ellipse(cPosX, cPosY, cRadius, cRadius, 0, 0, 2*Math.PI);
     context.stroke();
     context.fill();
-    
 }
 
 // Function for ball to be redrawn as it moves
