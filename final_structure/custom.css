@@ -2,3 +2,6 @@ a-scene {
     height: 300px;
     width: 600px;
   }
+  .title {
+      padding-top: 100px;
+  }

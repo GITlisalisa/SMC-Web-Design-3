@@ -100,8 +100,8 @@ transition: 0.75s all;
     mix-blend-mode: screen;
 }
 
-.p-4 {
-    background-color: var(--blue);
+.cake-info {
+    background-color: transparent;
 }
 .gradient-effect-title {
     text-decoration: none;
