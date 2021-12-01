@@ -90,7 +90,7 @@ cursor: pointer;
 transition: 0.75s all;
 }
 .gradient-effect-img {
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     top: 0;
     background: #000 no-repeat center center;
@@ -103,7 +103,9 @@ transition: 0.75s all;
     /* height:600px; 
     width: 400px; */
 }
-
+.p-4 {
+    background-color: var(--blue);
+}
 .gradient-effect-title {
     text-decoration: none;
     position: relative;
@@ -146,14 +148,18 @@ transition: 0.75s all;
     transition: all 0.3s ease-in-out;
 }
 
-
-
+.copyright{
+    color: var(--purple);
+}
+footer{
+    background-color: var(--blue);
+}
 #footer-gradient {
-    background-image: linear-gradient( rgb(176, 235, 247), rgb(255, 208, 232));
+    background-image: linear-gradient( var(--blue), rgb(255, 208, 232));
  
 }
 
 footer a{
     font-family: var(--bs-body-font-family);
-color: var(--purple);
+    color: var(--purple)!important;
 }
