@@ -5,3 +5,13 @@ a-scene {
   .title {
       padding-top: 100px;
   }
+
+  #canvasParent1{
+    background-color: black;
+    width: 100vw;
+  }
+
+  #canvasParent2{
+    background-color: black;
+    width: 100vw;
+  }
