@@ -1,0 +1,72 @@
+a-scene {
+    height: 300px;
+    width: 600px;
+  }
+
+.title {
+      padding-top: 100px;
+}
+
+#canvasParent1{
+    background-color: black;
+    width: 100vw;
+}
+
+#canvasParent2{
+    background-color: black;
+    width: 100vw;
+  }
+
+.animation{
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+  .ball{
+    position: absolute;
+    height: 70px;
+    top: 50%;
+    left: 0;
+ }
+
+.navbar-toggler {
+    background-color: white!important;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@property --num {
+  syntax: '<integer>';
+  initial-value: 123456789;
+  inherits: false;
+}
+
+.ballCounter {
+  animation: counter ease-in-out;
+  counter-reset: num var(--num);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  padding: 2rem;
+  font-size: 15rem;
+  transition: --num 3s;
+
+}
+div:hover {
+  --num: 301108120;
+}
+
+.ballCounter::after {
+  content: counter(num);
+  color:blue;
+}
