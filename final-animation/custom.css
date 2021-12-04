@@ -1,6 +1,7 @@
 div{
-    height: 800px;
-    display: block;
+    height:800px;
+    width: 100%;
+    /* display: block; */
 }
 .ball { 
     position: absolute;
@@ -16,17 +17,22 @@ div{
       top:40vh;
       left: 10vw;
       transform: scale(1.5) rotate(0deg);
-        }
+    }
     25% {
         top:20vh;
         left: 30vw;
         transform: scale(2.5) rotate(180deg);
-        }
+    }
+    99% {
+            opacity: 1;
+    }  
     100% {
       top:100vh;
       left: 100vw;
       transform: scale(.1) rotate(359deg);
-        }   
+      opacity: 0;
+      display: none;
+    }   
     } 
 
     .ball-RtoL { 
@@ -43,17 +49,21 @@ div{
           top:40vh;
           right: 10vw;
           transform: scale(1.5) rotate(0deg);
-            }
+        }
         25% {
             top:20vh;
             right: 30vw;
             transform: scale(2.5) rotate(180deg);
-            }
+        }
+        99% {
+            opacity: 1;
+        }  
         100% {
           top:100vh;
           right: 100vw;
           transform: scale(.1) rotate(359deg);
-            }   
+          display: none;
+        }   
         } 
 
 .ball-curve {
