@@ -121,8 +121,17 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
     <script src="sketch.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    
     </div>
     <script>
+  //     window.addEventListener('scroll', function() {
+  // var element = document.querySelector('.ball');
+  // var position = element.getBoundingClientRect();
+
+  // checking whether fully visible
+  if (position.top >= 0 && position.bottom <= window.innerHeight) {
+     console.log('Element is fully visible in screen');
+  }
       //common reveal options to create reveal animations
       ScrollReveal({
         //reset: true,
