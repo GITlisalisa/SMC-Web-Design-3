@@ -1,3 +1,9 @@
+html{
+  scroll-behavior: smooth;
+}
+html.sr .load-hidden {
+  visibility: hidden;
+}
 .title {
       padding-top: 100px;
 }
@@ -10,6 +16,12 @@
 #canvasParent2{
     background-color: black;
     width: 100vw;
+  }
+  .bio-btn{
+    transition: 0.3s;
+  }
+  .bio-btn:hover{
+    transform: scale(1.1);
   }
 
 /* .animation{
