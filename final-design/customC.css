@@ -16,15 +16,14 @@ font-family: 'Merriweather', serif; */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-
 :root{
   /* optionA palette and fonts */
-  --display-font: 'Changa', sans-serif; 
+  /* --display-font: 'Changa', sans-serif; 
   --body-font:'Source Sans Pro', sans-serif;
   --darkColor: #06366B;
   --lightColor:  #02A9F7;
   --accentColor:  #8DC640; 
-  --bgColor: white;
+  --bgColor: white; */
 
   /* optionB palette and fonts */
   /* --display-font: 'Electrolize', sans-serif;
@@ -35,16 +34,17 @@ font-family: 'Merriweather', serif; */
   --bgColor: white; */
 
    /* optionC palette and fonts */
-  /* --display-font: 'IBM Plex Mono', monospace;  
+  --display-font: 'IBM Plex Mono', monospace;  
   --body-font: 'Merriweather', serif; 
-  --darkColor: #06366B;
-  --lightColor:  #02A9F7;
-  --accentColor:  #8DC640;
-  --bgColor: black; */
+  --darkColor: #2F4858;
+  --lightColor:  #F2F2F2;
+  --accentColor:  #00A3FF;
+  --bgColor: black;
 }
 
 html{
   scroll-behavior: smooth;
+  background-color: var(--bgColor);
 }
 html.sr .load-hidden {
   visibility: hidden;
@@ -59,14 +59,15 @@ html.sr .load-hidden {
 .navbar-light .navbar-toggler {
   border-color: transparent !important;
 }
+
 .offcanvas-body{
-  background: linear-gradient(to bottom, var(--darkColor)0%, var(--lightColor) 100%);
+  background: black;
 
 }
 .offcanvas-body .nav-link{
   font-family: var(--display-font) !important;
   font-size: 4rem !important;
-  background: -webkit-linear-gradient(var(--darkColor), var(--lightColor));
+  background: -webkit-linear-gradient(#06366B, #02A9F7);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: white;
@@ -74,7 +75,7 @@ html.sr .load-hidden {
 .offcanvas-body .nav-link:hover{
   font-family: var(--display-font) !important;
   font-size: 4rem !important;
-  background: -webkit-linear-gradient(var(--darkColor), var(--lightColor));
+  background: -webkit-linear-gradient(#06366B, #02A9F7);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--accentColor);
@@ -82,7 +83,7 @@ html.sr .load-hidden {
 a:active{
   font-family: var(--display-font) !important;
   font-size: 4rem !important;
-  background: -webkit-linear-gradient(var(--darkColor), var(--lightColor));
+  background: -webkit-linear-gradient(#06366B, #02A9F7);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--accentColor);
@@ -93,6 +94,8 @@ a:active{
 }
 .card{
   border: none!important;
+  background-color: var(--bgColor)!important;
+  color: white!important;
 }
 .title {
       padding-top: 100px;
@@ -101,7 +104,7 @@ a:active{
 font-family: var(--display-font)!important;
 font-size: 4rem!important;
 line-height: 4rem;
-background: -webkit-linear-gradient(var(--darkColor), var(--lightColor));
+background: -webkit-linear-gradient(#06366B, #02A9F7);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -123,6 +126,10 @@ color: var(--accentColor)!important;
   font-family: var(--body-font)!important;
   color: var(--darkColor)!important;
 }
+.body-text-wht{
+  font-family: var(--body-font)!important;
+  color: white!important;
+}
 .body-text-lg{
   font-family: var(--body-font)!important;
   font-size: 2rem!important;
@@ -142,8 +149,19 @@ p{
 
 .btn-primary{
   color: white!important;
-  background-image: linear-gradient(to bottom, var(--darkColor)0%, var(--lightColor) 100%)!important;
+  /* background-image: linear-gradient(to bottom, var(--darkColor)0%, var(--lightColor) 100%)!important; */
+  background-color: transparent!important;
+  padding:0!important;
   border: none!important;
+}
+.btn-primary:hover {
+  border: none!important;
+  border-color: none!important;
+}
+.btn-primary:focus {
+  background-color: none!important;
+  border-color: none!important;
+  box-shadow:none!important;
 }
 
 .collapse.show {
@@ -269,9 +287,7 @@ p{
        }
     }
 
-.navbar-toggler {
-    background-color: white!important;
-}
+
 #brand-name {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.5rem;
