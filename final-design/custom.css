@@ -1,13 +1,141 @@
+/* Font pairing for bright color palette  */
+/* font-family: 'Changa', sans-serif; 
+font-family: 'Source Sans Pro', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* Font pairing for classic color palette */
+/* font-family: 'Electrolize', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Font pairing for greyscale color palette*/
+/* font-family: 'IBM Plex Mono', monospace; 
+font-family: 'Merriweather', serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+  --display-font: 'Changa', sans-serif; 
+  --body-font:'Source Sans Pro', sans-serif;
+  /* --display-font: 'Electrolize', sans-serif;
+  --body-font:'Work Sans', sans-serif; */
+  /* --display-font: 'IBM Plex Mono', monospace;  
+  --body-font: 'Merriweather', serif; */
+  --darkColor: #06366B;
+  --lightColor:  #02A9F7;
+  --accentColor:  #8DC640;
+  --bgColor: white;
+ 
+}
 html{
   scroll-behavior: smooth;
 }
 html.sr .load-hidden {
   visibility: hidden;
 }
+.cover-container {
+  padding-top: 80px;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent !important;
+}
+.offcanvas-body{
+  background: linear-gradient(to bottom, var(--darkColor)0%, var(--lightColor) 100%);
+
+}
+.offcanvas-body .nav-link{
+  font-family: var(--display-font) !important;
+  font-size: 4rem !important;
+  background: -webkit-linear-gradient(#06366B, #02A9F7);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+}
+.offcanvas-body .nav-link:hover{
+  font-family: var(--display-font) !important;
+  font-size: 4rem !important;
+  background: -webkit-linear-gradient(#06366B, #02A9F7);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--accentColor);
+}
+a:active{
+  font-family: var(--display-font) !important;
+  font-size: 4rem !important;
+  background: -webkit-linear-gradient(#06366B, #02A9F7);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--accentColor);
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+.card{
+  border: none!important;
+}
 .title {
       padding-top: 100px;
 }
+.h1-custom{
+font-family: var(--display-font)!important;
+font-size: 4rem!important;
+line-height: 4rem;
+background: -webkit-linear-gradient(#06366B, #02A9F7);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
+.h2-custom{
+font-family: var(--display-font)!important;
+font-size: 2.5rem!important;
+line-height: 2.5rem;
+color: var(--accentColor)!important;
+}
+
+.h3-custom{
+  font-family: var(--display-font)!important;
+  font-size: 1.5rem!important;
+  line-height: 1.5rem;
+  color: var(--darkColor)!important;
+}
+.body-text{
+  font-family: var(--body-font)!important;
+  color: var(--darkColor)!important;
+}
+.body-text-lg{
+  font-family: var(--body-font)!important;
+  font-size: 2rem!important;
+  color: var(--darkColor)!important;
+}
+.body-text-accent{
+  font-family: var(--body-font)!important;
+  font-size: 1.5rem!important;
+  color: var(--accentColor)!important;
+}
+p{
+  font-family: var(--body-font)!important;
+  font-size: 1rem!important;
+  color: var(--darkColor)!important;
+}
+
+
+.btn-primary{
+  color: white!important;
+  background-image: linear-gradient(to bottom, var(--darkColor)0%, var(--lightColor) 100%)!important;
+  border: none!important;
+}
+
+.collapse.show {
+  display: block;
+}
+.collapse {
+  display: none;
+ 
+}
 #canvasParent1{
     background-color: black;
     width: 100vw;
