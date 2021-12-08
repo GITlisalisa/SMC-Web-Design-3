@@ -14,11 +14,11 @@ font-family: 'Montserrat', sans-serif;*/
 
 :root{
   /* optionA palette and fonts */
-  --display-font: 'Roboto Condensed', sans-serif; 
-  --body-font:'Roboto Condensed', sans-serif; 
-  --darkColor: #06366B;
-  --lightColor:  #02A9F7;
-  --accentColor:  #8DC640; 
+  --display-font: 'Poppins', sans-serif;
+  --body-font: 'Poppins', sans-serif;
+  --darkColor: #0375B6;
+  --lightColor:  #0096C7;
+  --accentColor:  #00A3FF; 
   --bgColor: black;
 
   /* optionB palette and fonts */

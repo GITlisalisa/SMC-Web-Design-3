@@ -30,11 +30,11 @@ font-family: 'Montserrat', sans-serif;*/
   --bgColor: black; */
 
    /* optionC palette and fonts */
-  --display-font: 'Poppins', sans-serif;
-  --body-font: 'Poppins', sans-serif;
-  --darkColor: #2F4858;
-  --lightColor:  #F2F2F2;
-  --accentColor:  #00A3FF;
+   --display-font: 'Roboto Condensed', sans-serif; 
+   --body-font:'Roboto Condensed', sans-serif; 
+  --darkColor: #59910E;
+  --lightColor:  #8DC640;
+  --accentColor:  #C2F702;
   --bgColor: black;
 }
 
