@@ -1,5 +1,5 @@
 
-var audio = new Audio('golf-swing.wav');
+// var audio = new Audio('golf-swing.wav');
 
 function reveal() {
   var reveals = document.querySelectorAll('.reveal');
@@ -14,9 +14,11 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
-    audio.play();
+    // audio.play();
   }
 window.addEventListener("scroll", reveal);
+
+
 
 
 

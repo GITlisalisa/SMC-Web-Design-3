@@ -58,8 +58,11 @@ html.sr .load-hidden {
 .navbar-light .navbar-toggler {
   border-color: transparent !important;
 }
-.offcanvas-body{
-  background: linear-gradient(to bottom, var(--darkColor)0%, var(--lightColor) 100%);
+nav{
+  background-color: var(--bgColor);
+}
+.offcanvas-body, .offcanvas-header{
+  background-color: var(--darkColor);
 
 }
 .offcanvas-body .nav-link{
@@ -72,7 +75,6 @@ html.sr .load-hidden {
 }
 .offcanvas-body .nav-link:hover{
   font-family: var(--display-font) !important;
-  font-size: 4rem !important;
   background: -webkit-linear-gradient(var(--darkColor), var(--lightColor));
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -80,7 +82,6 @@ html.sr .load-hidden {
 }
 a:active{
   font-family: var(--display-font) !important;
-  font-size: 4rem !important;
   background: -webkit-linear-gradient(var(--darkColor), var(--lightColor));
   background-clip: border-box;
   -webkit-background-clip: text;
