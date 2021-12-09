@@ -1,8 +1,33 @@
 
-div{
+      body {
+          height: 4000px;
+      }
+      #div1{
+        height: 1000px;
+      }
+      #div2{
+        height: 1000px;
+      }
+
+      #scroll-ball-1 {
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          position: fixed;
+          /* background-color: black; */
+      }
+      #scroll-ball-2 {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        /* background-color: black; */
+    }
+
+/* div{
     height:800px;
     width: 100%;
-    /* display: block; */
+
 }
 .ball { 
     position: absolute;
@@ -99,5 +124,5 @@ div{
          to {
            top:90vh;
          }
-      }
+      } */
   
