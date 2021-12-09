@@ -8,50 +8,50 @@
     <link href="custom.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+ 
     <title>Web3 Final Structure</title>
   </head>
-  <body class="d-flex h-100 text-start text-white bg-dark p-3">
-    <header class="mb-auto">
-        <nav class="navbar navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Blue Ironwood Technologies</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Home</a>
+  <body>
+  <header>
+      <nav class="navbar navbar-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Blue Ironwood Technologies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page"  href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="team.html">Team</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page"  href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.html">Team</a>
-                      </li>
-                  </ul>
-                </div>
+                </ul>
               </div>
             </div>
-        </nav>
-    </header>
-    <main class="container">
-      <!-- Hero section -->
-      <div class="bg-dark text-secondary px-4 py-5 text-center">
-      
-          <h1 class="display-5 fw-bold text-white py-5">Our Story</h1>
-          <div class="col-lg-6 mx-auto fs-5 mb-4">
-            <p >Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
           </div>
-        
-      </div>
+      </nav>
+  </header>
+    <main>
+       <!-- Hero section -->
       <div class="container">
+        <div class="row">
+          <div class="col d-flex text-center px-3 py-5 mx-auto flex-column">
+            <h1 class="pt-5 mt-5 text-center display-5 fw-bold py-5">Our Story</h1>
+            <p class="mx-auto body-text-wht fs-5 mb-4 text-center ">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          </div>
+      </div>
+    </div><!-- end Hero container-->
+    <div class="container">
         <div class="row align-items-md-stretch">
           <div class="col-md-6 d-flex justify-content-sm-center justify-content-md-start">
             <p>
@@ -92,46 +92,26 @@
      
     </div>
     </main>
-    <footer class="py-3">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="https://21insights.idw.studio/" class="nav-link px-2 text-muted">21 Insights</a></li>
-        <li class="nav-item"><a href="https://www.humain.ai/" class="nav-link px-2 text-muted">Humain</a></li>
-        <li class="nav-item"><a href="https://30ua.info/en/" class="nav-link px-2 text-muted">30ua</a></li>
-        <li class="nav-item"><a href="https://www.kalso.com/" class="nav-link px-2 text-muted">Kalso</a></li>
-        <li class="nav-item"><a href="https://www.figma.com/file/JSBqvxaIqTjvEPmH0LBAMl/Web3-Final-Structure?node-id=0%3A1" class="nav-link px-2 text-muted">Figma-Structure</a></li>
-      </ul>
-      <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="text-muted">© 2021 Blue Ironwood Technologies, Inc</span>
-      </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-      </ul>
-    </div>
-  </footer>
     <footer>
-      <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      
-     
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="text-muted">© 2021 Company, Inc</span>
+      <div class="container">
+        <div class="row  py-3 my-4 border-top">
+          <div class="d-flex justify-content-center align-items-center col-12 col-md-6 col-lg-4 order-0 order-lg-0">
+            <span class="text-muted">© 2021 Blue Ironwood Technologies, Inc</span>
+          </div>
+          <ul class="d-flex justify-content-center align-items-center col-12 col-md-12 col-lg-4 nav order-2 order-lg-1">
+            <li class="nav-item"><a href="https://21insights.idw.studio/" class="nav-link px-2 text-muted">21 Insights</a></li>
+            <li class="nav-item"><a href="https://www.humain.ai/" class="nav-link px-2 text-muted">Humain</a></li>
+            <li class="nav-item"><a href="https://30ua.info/en/" class="nav-link px-2 text-muted">30ua</a></li>
+            <li class="nav-item"><a href="https://www.kalso.com/" class="nav-link px-2 text-muted">Kalso</a></li>
+            <li class="nav-item"><a href="https://www.figma.com/file/JSBqvxaIqTjvEPmH0LBAMl/Web3-Final-Structure?node-id=0%3A1" class="nav-link px-2 text-muted">Figma-Structure</a></li>
+          </ul>
+          <ul class="d-flex justify-content-center align-items-center col-12 col-md-6 col-lg-4 nav list-unstyled order-1 order-lg-2">
+            <li class="ms-3 p-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></i></a></li>
+            <li class="ms-3 p-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3 p-3"><a class="text-muted" href="#"><i class="bi bi-meta"></i></a></li>
+          </ul>
+        </div>
       </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-      </ul>
-    </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
