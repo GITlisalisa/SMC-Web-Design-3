@@ -40,7 +40,13 @@ font-family: 'Montserrat', sans-serif;*/
   --accentColor:  #00A3FF;
   --bgColor: black; */
 }
+#golfer-cover {
+  background-image: url('images/golfer-flag.jpg');
+  background-repeat: no-repeat;
+    background-size: auto;
+  height: 50vh;
 
+}
 
 html{
   scroll-behavior: smooth;
