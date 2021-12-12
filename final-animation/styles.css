@@ -1,0 +1,68 @@
+:root{
+    /* optionA palette and fonts */
+    --display-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins', sans-serif;
+    --darkColor: #0375B6;
+    --lightColor:  #0096C7;
+    --accentColor:  #00A3FF; 
+    --bgColor: black;}
+body {
+  font-family: sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.base-timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: black;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 1px;
+  stroke: lightslategray;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 1px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+color: var(--accentColor);
+}
+/* 
+.base-timer__path-remaining.orange {
+  color: orange;
+} */
+
+.base-timer__path-remaining.red {
+  color: white;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+}

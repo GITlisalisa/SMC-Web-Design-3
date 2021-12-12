@@ -41,6 +41,150 @@ font-family: 'Montserrat', sans-serif;*/
   --bgColor: black; */
 }
 
+
+html{
+  scroll-behavior: smooth;
+}
+html.sr .load-hidden {
+  visibility: hidden;
+}
+main{
+  background-color: var(--bgColor);
+ }
+ footer{
+   background-color: var(--bgColor);
+ }
+ .bi {
+   color: var(--accentColor);
+ }
+ nav{
+  background-color: var(--bgColor);
+}
+.offcanvas-body {
+  background-color: black;
+} 
+.offcanvas-body .nav-link{
+  font-family: var(--display-font) !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  font-family: var(--display-font) !important;
+  color: var(--accentColor)!important;
+}
+.offcanvas-end {
+  width: 50%!important;
+}
+.img-circle {
+  border-radius: 50%;
+}
+
+.card{
+  border: none!important;
+}
+
+.title {
+      padding-top: 100px;
+}
+
+.display-1 {
+  font-weight: 200!important;
+}
+.h1-custom{
+font-family: var(--display-font)!important;
+font-size: 4rem!important;
+line-height: 4rem;
+color: var(--accentColor)!important;
+}
+.h1-wht{
+  font-family: var(--display-font)!important;
+  font-size: 4rem!important;
+  line-height: 4rem;
+  color:white!important;
+  }
+.h2-custom{
+font-family: var(--display-font)!important;
+font-size: 2.5rem!important;
+line-height: 2.5rem;
+color: var(--accentColor)!important;
+}
+.h3-custom{
+  font-family: var(--display-font)!important;
+  font-size: 1.5rem!important;
+  line-height: 1.5rem;
+  color: var(--accentColor);
+}
+.body-text{
+  font-family: var(--body-font)!important;
+  color: var(--accentColor)!important;
+}
+.body-text-wht{
+  font-family: var(--body-font)!important;
+  color: white!important;
+}
+.body-text-lg{
+  font-family: var(--body-font)!important;
+  font-size: 2rem!important;
+  color: white!important;
+}
+.body-text-accent{
+  font-family: var(--body-font)!important;
+  font-size: 1.5rem!important;
+  color: var(--accentColor)!important;
+}
+p{
+  font-family: var(--body-font)!important;
+  font-size: 1rem!important;
+  color: white!important;
+}
+.btn-primary{
+  color: white!important;
+  background-image: linear-gradient(to bottom, var(--darkColor)0%, var(--lightColor) 100%)!important;
+  border: none!important;
+}
+
+.collapse.show {
+  display: block;
+}
+
+.collapse {
+  display: none;
+ 
+}
+
+#canvasParent1{
+    background-color: black;
+    width: 100vw;
+}
+
+#canvasParent2{
+    background-color: black;
+    width: 100vw;
+}
+
+  @property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+  } 
+  
+  .ballCounter {
+    animation: counter ease-in-out;
+    counter-reset: num var(--num);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    padding: 2rem;
+    font-size: 4rem;
+    transition: --num 4s;
+  }
+  
+  div:hover {
+    --num: 301108120;
+  }
+  
+  .ballCounter::after {
+    content: counter(num);
+    color:#2265D4;
+  }
+  
 .egg-box{
 position: relative;
 }
@@ -54,9 +198,9 @@ position: relative;
   left: 50%;
 }
 @keyframes pulse {
-  0% { box-shadow:0 0 8px white, inset 0 0 8px white; }
-  50% { box-shadow:0 0 16px var(--accentColor), inset 0 0 14px var(--accentColor); }
-  100% { box-shadow:0 0 8px white, inset 0 0 8px white; }
+  0% { box-shadow:0 0 8px white, inset 0 0 8px white scale(0.75, 0.75); }
+  50% { box-shadow:0 0 16px var(--accentColor), inset 0 0 14px var(--accentColor) scale(1, 1); }
+  100% { box-shadow:0 0 8px white, inset 0 0 8px white scale(0.75, 0.75); }
 }
 .glow-ring {
   animation: pulse 2s linear 1s infinite;
@@ -70,7 +214,15 @@ position: relative;
   border-radius:50px;
   box-shadow: 0 0 8px var(--accentColor), inset 0 0 8px var(--accentColor); 
 }
-
+.glow-ring-index {
+  animation: pulse 2s linear 1s infinite;
+  background-color:transparent;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  box-shadow: 0 0 8px var(--accentColor), inset 0 0 8px var(--accentColor); 
+  
+}
 .roll-combo:hover {
   transform: translate(-200px, 0px);
 	transition: 2.0s ease-in-out;
@@ -84,9 +236,8 @@ position: relative;
 	-webkit-transition: 3.0s ease;
   } 
 
-
 /* Pop In */
-.animate.pop {
+.pop {
   animation-name: animate-pop;
 }
 @keyframes animate-pop {
@@ -273,152 +424,8 @@ animation-delay: 2s;
   100% { transform: scale(1,1)      translateY(0); }
 }
 
-html{
-  scroll-behavior: smooth;
-}
-html.sr .load-hidden {
-  visibility: hidden;
-}
-main{
-  background-color: var(--bgColor);
- }
- footer{
-   background-color: var(--bgColor);
- }
- .bi {
-   color: var(--accentColor);
- }
-.navbar-light .navbar-toggler {
-  border-color: transparent !important;
-}
-.navbar-toggler {
-  background-color: black !important;
-}
-nav{
-  background-color: var(--bgColor);
-}
-.offcanvas-body, .offcanvas-header{
-  background-color: var(--darkColor);
+  
 
-}
-.offcanvas-body .nav-link{
-  font-family: var(--display-font) !important;
-  font-size: 4rem !important;
-  background: -webkit-linear-gradient(var(--darkColor), var(--lightColor));
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: white;
-}
-.offcanvas-body .nav-link:hover{
-  font-family: var(--display-font) !important;
-  background: -webkit-linear-gradient(var(--darkColor), var(--lightColor));
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: var(--accentColor);
-}
-a:active{
-  font-family: var(--display-font) !important;
-  background: -webkit-linear-gradient(var(--darkColor), var(--lightColor));
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: var(--accentColor);
-}
-
-.img-circle {
-  border-radius: 50%;
-}
-.card{
-  border: none!important;
-}
-.title {
-      padding-top: 100px;
-}
-.h1-custom{
-font-family: var(--display-font)!important;
-font-size: 4rem!important;
-line-height: 4rem;
-color: var(--accentColor)!important;
-}
-
-.h2-custom{
-font-family: var(--display-font)!important;
-font-size: 2.5rem!important;
-line-height: 2.5rem;
-color: var(--accentColor)!important;
-}
-
-.h3-custom{
-  font-family: var(--display-font)!important;
-  font-size: 1.5rem!important;
-  line-height: 1.5rem;
-  color: var(--accentColor);
-}
-.body-text{
-  font-family: var(--body-font)!important;
-  color: var(--accentColor)!important;
-}
-.body-text-wht{
-  font-family: var(--body-font)!important;
-  color: white!important;
-}
-.body-text-lg{
-  font-family: var(--body-font)!important;
-  font-size: 2rem!important;
-  color: white!important;
-}
-.body-text-accent{
-  font-family: var(--body-font)!important;
-  font-size: 1.5rem!important;
-  color: var(--accentColor)!important;
-}
-p{
-  font-family: var(--body-font)!important;
-  font-size: 1rem!important;
-  color: white!important;
-}
-
-
-.btn-primary{
-  color: white!important;
-  background-image: linear-gradient(to bottom, var(--darkColor)0%, var(--lightColor) 100%)!important;
-  border: none!important;
-}
-
-.collapse.show {
-  display: block;
-}
-.collapse {
-  display: none;
- 
-}
-#canvasParent1{
-    background-color: black;
-    width: 100vw;
-}
-
-#canvasParent2{
-    background-color: black;
-    width: 100vw;
-  }
-  .bio-btn{
-    transition: 0.3s;
-  }
-  .bio-btn:hover{
-    transform: scale(1.1);
-  }
-
-/* .animation{
-    position: relative;
-    overflow: hidden;
-    background-color: white;
-}
-
-  .ball{
-    position: absolute;
-    height: 70px;
-    top: 50%;
-    left: 0;
- } */
  .ball { 
   position: absolute;
   left: 10vw;
@@ -524,30 +531,60 @@ p{
   transform: translateY(0);
   opacity: 1;
 } */
+
+
+/* timer styling */
+
+.base-timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: black;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 1px;
+  stroke: lightslategray;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 1px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+color: var(--accentColor);
+}
 /* 
-@property --num {
-  syntax: '<integer>';
-  initial-value: 0;
-  inherits: false;
+.base-timer__path-remaining.orange {
+  color: orange;
 } */
 
-.ballCounter {
-  animation: counter ease-in-out;
-  counter-reset: num var(--num);
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  padding: 2rem;
+.base-timer__path-remaining.red {
+  color: white;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 4rem;
-  transition: --num 4s;
+  color: white;
 }
-
-div:hover {
-  --num: 301108120;
-}
-
-.ballCounter::after {
-  content: counter(num);
-  color:#2265D4;
-}
-
-
