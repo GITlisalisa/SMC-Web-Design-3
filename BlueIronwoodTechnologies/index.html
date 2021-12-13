@@ -65,68 +65,30 @@
 
 <!-- page1 -->
         <div class="container">
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-5">
-                <h1 class="display-3">An Estimated</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-7">
-              <div class="bg-danger" style="height: 100px;"></div>
-          </div>
-          </div>
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-5">
-              <h1 class="display-3">are lost and abandoned every year in the U.S. alone</h1>
-            </div>
-          </div>
-        </div>
+          <div class="row ">
+            <div class="col-12">
 
-<!-- page2 -->
-        <div class="container">
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-5">
-                <h1 class="display-3">An Estimated</h1>
+                <h1 class="display-3 text-start">An Estimated
+                <span class="counter ballCounter p-0" data-target="301108120">100000000</span>
+               are lost and abandoned every year in the U.S. alone
+                Which is why our team at
+                <span class="name-narrative d-block text-end">BLUE IRONWOOD TECHNOLOGIES</span>
+                developed a technologically advanced golf ball with a built-in gps  tracking system, so you’ll be able to find your ball no matter where it lands.</h1>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-7">
-              <div class="bg-primary" style="height: 100px;"></div>
-          </div>
-          </div>
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-5">
-              <h1 class="display-3">are lost and abandoned every year in the U.S. alone</h1>
-            </div>
-          </div>
-        </div>
-<!-- page3 -->
-        <div class="container">
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-5">
-                <h1 class="display-3">That’s why our team at</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-7">
-              <div class="bg-secondary" style="height: 100px;">blue iron</div>
-          </div>
-          </div>
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-5">
-              <h1 class="display-3">developed a technologically advanced golf ball with a built-in gps  tracking system, so you’ll be able to find your ball no matter where it lands.</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-1 d-flex align-content-between flex-wrap justify-content-between w-100 d-block ">
-      
+           
+      </div>
+
+    <div class="row">
+            <div class="col-1 d-flex align-content-center flex-wrap justify-content-center w-100 d-block ">
               <img src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm blink-animation">
-              <img src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm blink-animation">
-            
           </div>
           </div>
-        </div>
+        </div>   <!-- closes container -->
+        <!-- <div class="ball-wrapper load-hidden" >
+          <img class="ball" src="images/golfball.png" alt="golfball" >
+        </div> -->
       </main>
+
   <footer>
     <div class="container">
       <div class="row  py-3 border-top">
@@ -159,12 +121,31 @@
     ScrollReveal({
     // reset: true,
     distance: '80px',
-    duration: 2500,
+    duration:500,
     delay:400
   });
-  ScrollReveal().reveal('.header', { delay: 500, origin: 'top' });
-  ScrollReveal().reveal('.bio', { delay: 500, origin: 'left', interval: 200 });
+  ScrollReveal().reveal('.ball-wrapper', { delay: 500 });
   
+
+
+  // Selector
+const counters = document.querySelectorAll('.counter');
+// Main function
+for(let n of counters) {
+  const updateCount = () => {
+    const target = + n.getAttribute('data-target');
+    const count = + n.innerText;
+    const speed = 500; // change animation speed here
+    const inc = target / speed; 
+    if(count < target) {
+      n.innerText = Math.ceil(count + inc);
+      setTimeout(updateCount, 1);
+    } else {
+      n.innerText = target;
+    }
+  }
+  updateCount();
+}
   </script>
   </body>
 </html>
