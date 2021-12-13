@@ -72,12 +72,13 @@ main{
 .offcanvas-body .nav-link{
   font-family: var(--display-font) !important;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover{
   font-family: var(--display-font) !important;
   color: var(--accentColor)!important;
 }
-.offcanvas-end {
-  width: 50%!important;
+.offcanvas-body .nav-link:hover{
+  color: var(--accentColor)!important;
 }
 .img-circle {
   border-radius: 50%;
@@ -229,6 +230,54 @@ position: relative;
   box-shadow: 0 0 8px var(--accentColor), inset 0 0 8px var(--accentColor); 
   
 }
+.glow-ring-index-sm {
+  animation: pulse 2s linear 1s infinite;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+  box-shadow: 0 0 8px var(--accentColor), inset 0 0 8px var(--accentColor);
+}
+
+.blink-animation {
+  border-radius: 100%;
+  border: var(--size) solid var(--point-color);
+  margin: calc(var(--size)*2);
+}
+
+.blink-animation:nth-child(1) {
+  animation: fadeIn 2s ease-in-out alternate infinite;
+}
+.blink-animation:nth-child(2) {
+  animation: fadeIn 2s ease-in-out alternate 2s infinite;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+ 
+  100% { opacity: 1; }
+  }
+
+/* .blink {
+  animation: blink-animation 4s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.blink:nth-child(1) { 
+  animation-delay: 0s;
+}
+
+.blink:nth-child(2) { 
+  animation-delay: -1s;
+} */
+
+
+
+
+
+
 .roll-combo:hover {
   transform: translate(-200px, 0px);
 	transition: 2.0s ease-in-out;
