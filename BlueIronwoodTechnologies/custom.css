@@ -61,19 +61,14 @@ main{
   .cover-img {
     background: url(images/golfer-flag.png) no-repeat center center fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     height: 100%;
     overflow: hidden;
+    background-position: 15% 20%;
   }
   
   .home-cover-img {
     background: url(images/golfcourse.jpg) no-repeat center center fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     height: 100%;
     overflow: hidden;
   }
@@ -129,9 +124,15 @@ main{
   color: white;
   opacity: .3;
 }
+.display-3 {
+  font-weight: 200!important;
+  color: white;
+}
 
 .display-6 {
   font-weight: 200!important;
+  font-size: 2rem!important;
+
 }
 .name-narrative{
   color: var(--accentColor);
@@ -286,14 +287,10 @@ position: relative;
 .roll-combo:hover {
   transform: translate(-200px, 0px);
 	transition: 2.0s ease-in-out;
-	-moz-transition: 2.0s ease-in-out;
-	-webkit-transition: 2.0s ease-in-out;
 }
 .spin:hover {
   transform:rotate(180deg);
 	transition: 3.0s ease;
-	-moz-transition: 3.0s ease;
-	-webkit-transition: 3.0s ease;
   } 
 
 /* bouncing pic animation  */
@@ -407,7 +404,7 @@ position: relative;
 
 /* timer styling */
 #app{
-  opacity: .7;
+  opacity: .5;
 }
 .base-timer {
   position: relative;
