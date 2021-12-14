@@ -12,53 +12,47 @@
     
     <title>Blue Iron Technologies</title>
   </head>
-  <body  data-spy="scroll" data-target=".navbar" >
-    <header>
-          <nav class="navbar navbar-expand-lg navbar-dark fixed-top vw-100 px-1">
-              <div class="container">
-           <div class=row>
-             <div class="col-12">
-                <a class="navbar-brand" href="index.html">
-                  <img class="d-md-none flex-lg-grow-0" src="images/logo.png" alt="logo" width="45" height="45">
-                  <img class="d-none d-md-inline-block flex-lg-grow-0" src="images/logo-text2.png" alt="logo text" >
-                </a>
-            
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                  <div class="offcanvas-header">
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body text-start text-md-center">
-                    <ul class="navbar-nav d-flex justify-content-around justify-content-center flex-grow-1 pe-3 display-6">
-                      <li class="nav-item navbar-text  ">
-                        <a class="nav-link active"  aria-current="page"   href="index.html">HOME</a>
-                      </li>
-                      <li class="nav-item navbar-text  ">
-                        <a class="nav-link" href="aboutus.html">ABOUT</a>
-                      </li>
-                      <li class="nav-item navbar-text  ">
-                          <a class="nav-link " href="team.html">TEAM</a>
-                        </li>
-                    </ul>
-                  </div>
-                </div>
-                </div>
+  <body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 px-">
+          <div class="container-fluid">
+            <a class="navbar-brand" style="opacity: .7;" href="index.html">
+              <!-- <img class="flex-lg-grow-0" src="images/logo.png" alt="logo" width="45" height="45"> -->
+              <img class="d-inline-block flex-lg-grow-0" src="images/logo-text2-sm.png" alt="logo text" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
+              <div class="offcanvas-body text-center">
+                <ul class="navbar-nav justify-content-end flex-grow-1 display-6" style="opacity: .7;">
+                  <li class="nav-item">
+                    <a class="nav-link  active" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="team.html">TEAM</a>
+                    </li>
+                </ul>
               </div>
-          </nav>
-    </header> 
+            </div>
+          </div>
+      </nav>
+  </header> 
     <main>
       <!-- Hero section -->
         <div class="container">
           <div class="row min-vh-100">
-            
             <div class="col-12 d-flex justify-content-center align-items-end w-100 d-block pt-5 mt-5">
-              <h1 class="display-1">THE BIT BALL</h1>
+              <h1 class="display-1" style="font-size: 9vw;">THE BIT BALL</h1>
             </div>
             <div class="d-flex col-12 justify-content-center align-items-start w-100 d-block">
-              <p class="text-muted">by BLUE IRONWOOD TECHNOLOGIES</p> 
+              <p class="text-muted" style="font-size: 8vw;">by BLUE IRONWOOD TECHNOLOGIES</p> 
             </div>
             <div class="col-12 d-flex align-items-center  justify-content-center w-100 d-block">
               <img src="images/golfball.png" alt="hidden ball" class="glow-ring-index ">
@@ -68,26 +62,26 @@
         </div><!-- close container-->
 
 <!-- page1 -->
-        <div class="container">
+        <div class="container-flex home-cover-img">
+          <div class="container" style="background: rgba(196, 196, 196, 0.5);">
           <div class="row ">
             <div class="col-12">
-
-                <h1 class="display-3 text-start">An estimated
-                <span class="counter ballCounter p-0" data-target="301108120">100000000</span>
-               are lost and abandoned every year in the U.S. alone
-                Which is why our team at
-                <span class="name-narrative d-block text-end">BLUE IRONWOOD TECHNOLOGIES</span>
-                developed a technologically advanced golf ball with a built-in gps  tracking system, so you’ll be able to find your ball no matter where it lands.</h1>
+                <h1 class="display-3 m-3 estimated load-hidden" style="color: white;">In the U.S. alone, an estimated
+                <span class="counter ballCounter d-block d-md-inline-block mx-4 px-0 py-0" style="width:300px" data-target="301108120">100000000</span>
+                are lost and abandoned every year. We would hate for your balls to be a part of that statistic. That is why our team at 
+                <span class="name-narrative d-block d-md-inline-block text-center">BLUE IRONWOOD TECHNOLOGIES</span>
+                developed a technologically advanced golf ball with a built-in GPS  tracking system, so you can find your ball no matter where it lands.</h1>
             </div>
            
       </div>
 
     <div class="row">
-            <div class="col-1 d-flex align-content-center flex-wrap justify-content-center w-100 d-block ">
-              <img src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm blink-animation">
+            <div class="col-1 d-flex align-content-center flex-wrap justify-content-center w-100 d-block  pb-3 my-3 blink-animation">
+              <img src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm ">
           </div>
           </div>
-        </div>   <!-- closes container -->
+        </div>
+      </div>   <!-- closes container -->
         <!-- <div class="ball-wrapper load-hidden" >
           <img class="ball" src="images/golfball.png" alt="golfball" >
         </div> -->
@@ -95,20 +89,14 @@
 
   <footer>
     <div class="container">
-      <div class="row  py-3 border-top">
+      <div class="row  py-3">
         <div class="d-flex justify-content-center justify-content-md-start align-items-center col-12 col-md-6 order-1 order-md-0">
           <span class="text-muted">© 2021 Blue Ironwood Technologies, Inc</span>
         </div>
-        <!-- <ul class="d-flex justify-content-center align-items-center col-12 col-md-12 col-lg-4 nav order-2 order-lg-1">
-          <li class="nav-item"><a href="team.html" class="nav-link px-2 text-muted">Option A</a></li>
-          <li class="nav-item"><a href="teamB.html" class="nav-link px-2 text-muted">Option B</a></li>
-          <li class="nav-item"><a href="teamC.html" class="nav-link px-2 text-muted">Option C</a></li>
-          <li class="nav-item"><a href="https://www.figma.com/file/wZjp2Hy1gXwVn3duEGLveu/Untitled?node-id=2%3A533" class="nav-link px-2 text-muted">Figma-Design</a></li>
-        </ul> -->
         <ul class="d-flex justify-content-center justify-content-md-end align-items-center col-12 col-md-6 nav list-unstyled order-0 order-md-1">
-          <li class="ms-3 p-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
-          <li class="ms-3 p-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
-          <li class="ms-3 p-3"><a class="text-muted" href="#"><i class="bi bi-meta"></i></a></li>
+          <li class="ms-3 p-3"><a class="text-muted" href="https://www.instagram.com/smcedu/"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3 p-3"><a class="text-muted" href="https://twitter.com/SMC_edu"><i class="bi bi-twitter"></i></a></li>
+          <li class="ms-3 p-3"><a class="text-muted" href="https://www.facebook.com/SantaMonicaCollegeOfficial"><i class="bi bi-meta"></i></a></li>
         </ul>
       </div>
     </div>
@@ -124,11 +112,11 @@
   
     ScrollReveal({
     // reset: true,
-    distance: '80px',
-    duration:500,
-    delay:400
+    distance: '60px',
+    duration:2500,
+    delay:500
   });
-  ScrollReveal().reveal('.ball-wrapper', { delay: 500 });
+  ScrollReveal().reveal('.estimated', { delay: 800,  origin: 'top' });
   
 
 

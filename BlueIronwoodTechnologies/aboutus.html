@@ -14,12 +14,11 @@
   </head>
 <body>
   <header>
-    <nav class="navbar navbar-dark fixed-top vw-100 px-1">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 px-">
         <div class="container-fluid">
-     
-          <a class="navbar-brand" href="index.html">
-            <img class="flex-lg-grow-0" src="images/logo.png" alt="logo" width="45" height="45">
-            <img class="d-none d-lg-inline-block flex-lg-grow-0" src="images/logo-text.png" alt="logo text" >
+          <a class="navbar-brand" style="opacity: .7;" href="index.html">
+            <!-- <img class="flex-lg-grow-0" src="images/logo.png" alt="logo" width="45" height="45"> -->
+            <img class="d-inline-block flex-lg-grow-0" src="images/logo-text2-sm.png" alt="logo text" >
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -28,13 +27,13 @@
             <div class="offcanvas-header">
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body text-start text-md-center">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 display-1">
+            <div class="offcanvas-body text-center">
+              <ul class="navbar-nav justify-content-end flex-grow-1 display-6" style="opacity: .7;">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="aboutus.html">ABOUT</a>
+                  <a class="nav-link   active" aria-current="page" href="aboutus.html">ABOUT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="team.html">TEAM</a>
@@ -55,14 +54,14 @@
     </div>
   </div> <!-- end Hero container-->
 <!--start story container -->
-<div class="container">
-    <div class="row ">
-      <div class="col-12 col-md-6 d-flex align-items-end justify-content-center ">
-          <p class="text-start px-3 my-3 fs-5 my-0"><span class="display-6 name-narrative">THREE MINUTES</span> is not a lot of time to tell our story or find a lost golf ball, for that matter. Per USGA rules, if you cannot find your ball within 3 minutes, you must take a penalty, and the ball is considered lost. </p>
+<div class="container  cover-img">
+    <div class="row pb-5">
+      <div class="col-12 col-md-7 d-flex align-items-center justify-content-center three-min load-hidden">
+          <h1 class="display-3 text-start px-3 my-3 my-0" style="color: white;"><span class="display-3 name-narrative">THREE MINUTES</span> is not a lot of time to tell our story or find a lost golf ball, for that matter.</h1>
       </div>
   <!-- timer -->
-      <div class="col-12 col-md-6 d-flex justify-content-center">
-        <div id="app">
+      <div class="col-12 col-md-5 d-flex justify-content-center">
+        <div class="timer load-hidden" id="app">
           <div class="base-timer p-3">
             <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
               <g class="base-timer__circle">
@@ -81,13 +80,10 @@
       </div>
   <!-- end timer -->
   </div><!-- close row-->
-  <div class="row d-flex align-items-end flex-column">
-    <div class="col-12 col-md-6 align-items-center flex-fill "  style="background: rgba(196, 196, 196, 0.3);">
-      <picture>
-        <img src="images/golfer-flag-sm.png" class="img-fluid" alt="...">
-      </picture> 
-      <p class="fs-5 px-3 my-3">Ervin, a former senior software engineer, became increasingly fed up with how many balls he had lost.  Using his background in software engineering, Ervin created Blue Ironwood Technologies and developed the first BIT ball. </p>
-      <p class="fs-5 px-3 my-3">Blue Ironwood Technologies is committed to integrating the best of technology into golf tools that will optimize your results and help you play your best game. If anything, we'll ensure you will never lose another ball.
+  <div class="row d-flex justify-content-end my-5">
+    <div class="col-12 col-md-6 m-4"  style="background: rgba(196, 196, 196, 0.3); height:100%;">
+      <p class="fs-5 p-4">Per USGA rules, if you cannot find your ball within 3 minutes, you must take a penalty, and the ball is considered lost.  A former senior software engineer, Ervin became fed up with how many balls he had lost because he could not locate them within the allotted time.  Using his background in software engineering, Ervin created Blue Ironwood Technologies and developed the BIT ball.</p>
+      <p class="fs-5 p-4">Blue Ironwood Technologies is committed to integrating cutting-edge technology with golf products that will optimize your results and help you play your best game. If anything, we'll ensure you will never lose another ball.
       </p>
     </div>
     </div><!-- close row-->
@@ -100,16 +96,10 @@
         <div class="d-flex justify-content-center justify-content-md-start align-items-center col-12 col-md-6 order-1 order-md-0">
           <span class="text-muted">© 2021 Blue Ironwood Technologies, Inc</span>
         </div>
-        <!-- <ul class="d-flex justify-content-center align-items-center col-12 col-md-12 col-lg-4 nav order-2 order-lg-1">
-          <li class="nav-item"><a href="team.html" class="nav-link px-2 text-muted">Option A</a></li>
-          <li class="nav-item"><a href="teamB.html" class="nav-link px-2 text-muted">Option B</a></li>
-          <li class="nav-item"><a href="teamC.html" class="nav-link px-2 text-muted">Option C</a></li>
-          <li class="nav-item"><a href="https://www.figma.com/file/wZjp2Hy1gXwVn3duEGLveu/Untitled?node-id=2%3A533" class="nav-link px-2 text-muted">Figma-Design</a></li>
-        </ul> -->
         <ul class="d-flex justify-content-center justify-content-md-end align-items-center col-12 col-md-6 nav list-unstyled order-0 order-md-1">
-          <li class="ms-3 p-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
-          <li class="ms-3 p-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
-          <li class="ms-3 p-3"><a class="text-muted" href="#"><i class="bi bi-meta"></i></a></li>
+          <li class="ms-3 p-3"><a class="text-muted" href="https://www.instagram.com/smcedu/"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3 p-3"><a class="text-muted" href="https://twitter.com/SMC_edu"><i class="bi bi-twitter"></i></a></li>
+          <li class="ms-3 p-3"><a class="text-muted" href="https://www.facebook.com/SantaMonicaCollegeOfficial"><i class="bi bi-meta"></i></a></li>
         </ul>
       </div>
     </div>
@@ -120,12 +110,12 @@
 <script>
   ScrollReveal({
   // reset: true,
-  distance: '80px',
+  distance: '60px',
   duration: 2500,
-  delay:400
+  delay:500
 });
-ScrollReveal().reveal('.header', { delay: 500, origin: 'top' });
-ScrollReveal().reveal('.bio', { delay: 500, origin: 'left', interval: 200 });
+ScrollReveal().reveal('.three-min', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.timer', { delay: 1000, origin: 'top' });
 
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
