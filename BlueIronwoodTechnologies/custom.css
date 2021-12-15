@@ -119,6 +119,10 @@ main{
 .title {
       padding-top: 100px;
 }
+.p-custom{
+  text-align: justify;
+  text-justify: inter-word;
+}
 .display-1 {
   font-weight: 200!important;
   color: white;
