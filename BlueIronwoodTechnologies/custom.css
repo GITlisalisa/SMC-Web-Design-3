@@ -127,6 +127,8 @@ main{
 .display-3 {
   font-weight: 200!important;
   color: white;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .display-6 {
@@ -138,6 +140,7 @@ main{
   color: var(--accentColor);
   font-size: 2.5rem;
 }
+
 .h1-custom{
 font-family: var(--display-font)!important;
 font-size: 4rem!important;
