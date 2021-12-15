@@ -486,5 +486,17 @@ color: var(--accentColor);
   font-size: 4rem;
   color: white;
 }
-
+#counterbasket{
+  color: white;
+  padding-left: 0!important;
+  font-size: 1rem;
+  background:transparent;
+  width:40px;
+  height:40px;
+  /* line-height:100px; */
+  text-align:center;
+  border-radius:50%;
+  border:none;
+  transition:0.2s;
+}
 

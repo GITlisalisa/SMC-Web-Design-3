@@ -20,6 +20,14 @@
               <!-- <img class="flex-lg-grow-0" src="images/logo.png" alt="logo" width="45" height="45"> -->
               <img class="d-inline-block flex-lg-grow-0" src="images/logo-text2-sm.png" alt="logo text" >
             </a>
+           
+      <a class="row  d-flex align-items-center    nav-link active order-lg-2">
+       
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-basket3" viewBox="0 0 16 16">
+          <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z"/>
+        </svg>
+        <button class="col-4" id="counterbasket">0</button>
+      </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,16 +89,16 @@
 <div class="col-12">
 <img class="img-fluid" src="images/golfcourse.jpg">
 <div class="blink-animation delay-1" style="position: relative; left: 20vw;
-top: -8vh; z-index:99;">
-  <img src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm" style="width: 15px; height: 15px;">
+top: -8vh; z-index:99;" >
+  <img id="addToCart" src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm" style="width: 15px; height: 15px;">
 </div>
 <div class="blink-animation2 delay-2" style="position: relative; left: 60vw;
 top: -16vh; z-index:99;">
-  <img src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm" style="width: 15px; height: 15px;">
+  <img id="addToCart2" src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm" style="width: 15px; height: 15px;">
 </div>
 <div class="blink-animation3 delay-3" style="position: relative; left: 40vw;
 top: -23vh; z-index:99;">
-  <img src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm" style="width: 15px; height: 15px;">
+  <img id="addToCart3" src="images/golfball.png" alt="hidden ball" class="glow-ring-index-sm" style="width: 15px; height: 15px;">
 </div>
 </div>
 <div class="col-12 col-md-6">
@@ -157,6 +165,21 @@ for(let n of counters) {
   }
   updateCount();
 }
-  </script>
+
+    var count=0
+    document.getElementById("addToCart").onclick=function(){
+        count=count+1;
+        counterbasket.innerHTML=count
+      }
+      document.getElementById("addToCart2").onclick=function(){
+        count=count+1;
+        counterbasket.innerHTML=count
+      }
+      document.getElementById("addToCart3").onclick=function(){
+        count=count+1;
+        counterbasket.innerHTML=count
+      }
+    </script> 
+    
   </body>
 </html>
