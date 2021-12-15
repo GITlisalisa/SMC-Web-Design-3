@@ -46,7 +46,7 @@
 </header> 
 <main>
   <div class="container">
-    <div class="row ">
+    <div class="row">
       <div class="col d-flex text-center px-3 py-5 mx-auto flex-column">
         <h1 class="pt-5 mt-5 mx-auto display-1">ABOUT US</h1>
         <!-- <p class="mx-auto text-muted mb-4">Lorem ipsum anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p> -->
@@ -54,45 +54,44 @@
     </div>
   </div> <!-- end Hero container-->
 <!--start story container -->
-<div class="container-flex cover-img">
-  <div class="container px-3" style="background: rgba(0, 0, 0, 0.45);">
-    <div class="row pb-5">
-      <div class="col-12 col-md-6 d-flex align-items-center justify-content-center three-min load-hidden">
-          <h1 class="display-3 text-start px-3 my-3" style="color: white;"><span class="display-4 name-narrative">THREE MINUTES</span> is not a lot of time to tell our story or find a lost golf ball, for that matter.</h1>
-      </div>
-  <!-- timer -->
-      <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-        <div class="timer load-hidden" id="app">
-          <div class="base-timer p-3">
-            <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <g class="base-timer__circle">
-                <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
-                <path id="base-timer-path-remaining" stroke-dasharray="-14 283" class="base-timer__path-remaining red" d="
-                    M 50, 50
-                    m -45, 0
-                    a 45,45 0 1,0 90,0
-                    a 45,45 0 1,0 -90,0
-                  "></path>
-              </g>
-            </svg>
-            <span id="base-timer-label" class="base-timer__label">0:00</span>
-          </div>
-          </div>
-      </div>
-  <!-- end timer -->
+<div class="container">
+  <div class="row pb-5">
+    <div class="col-12 col-md-8 d-flex align-items-center justify-content-center ">
+        <h1 style="color: white;" class="three-min load-hidden text-start px-3 my-3"><span class="display-4 name-narrative">THREE MINUTES</span> is not a lot of time to tell our story or find a lost golf ball, for that matter.</h1>
+    </div>
+<!-- timer -->
+    <div class="mb-5 col-12 col-md-4 d-flex justify-content-center align-items-center timer load-hidden">
+      <div id="app" data-sr-id="2" style="visibility: visible; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 1s, transform 2.5s cubic-bezier(0.5, 0, 0, 1) 1s;" class="">
+<div class="base-timer ">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class=" base-timer__svg">
+<g class="base-timer__circle">
+<circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+<path id="base-timer-path-remaining" stroke-dasharray="234 283" class="base-timer__path-remaining green" d="
+   M 50, 50
+   m -45, 0
+   a 45,45 0 1,0 90,0
+   a 45,45 0 1,0 -90,0
+ "></path>
+</g>
+</svg>
+<span id="base-timer-label" class=" base-timer__label">2:29</span>
 </div>
-<div class="row pb-5">
-  <div class="col-12">
-      <h1 class="about-p2 display-3 p-4" style="color: white;">Per USGA rules, if you cannot find your ball within 3 minutes, you must take a penalty, and the ball is considered lost.  A former senior software engineer, Ervin became fed up with how many balls he had lost because he could not locate them within the allotted time.  Using his background in software engineering, Ervin created Blue Ironwood Technologies and developed the BIT ball.
-      </h1>
+</div>
     </div>
-      <div class="col-12">
-      <h1 class="about-p3 display-3 p-4" style="color: white;">Blue Ironwood Technologies is committed to integrating cutting-edge technology with golf products that will optimize your results and help you play your best game. If anything, we'll ensure you will never lose another ball.
-      </h1>
-    </div>
-    </div><!-- close row-->
+<!-- end timer -->
+<div class="col-12">
+<img class="img-fluid" src="images/golfer-flag.png">
+</div>
+  <div class="col-12 col-md-6">
+    <p class="about-p2 load-hidden p-4">Per USGA rules, if you cannot find your ball within 3 minutes, you must take a penalty, and the ball is considered lost.  A former senior software engineer, Ervin became fed up with how many balls he had lost because he could not locate them within the allotted time.  Using his background in software engineering, Ervin created Blue Ironwood Technologies and developed the BIT ball.
+    </p>
   </div>
-</div> <!-- close container-->
+  <div class="col-12 col-md-6">
+    <p class="about-p3 load-hidden p-4">Blue Ironwood Technologies is committed to integrating cutting-edge technology with golf products that will optimize your results and help you play your best game. If anything, we'll ensure you will never lose another ball.
+    </p>
+  </div>
+</div>
+</div><!-- close container-->
   </main>
   <footer>
     <div class="container">
@@ -119,9 +118,9 @@
   delay:500
 });
 ScrollReveal().reveal('.three-min', { delay: 500, origin: 'left' });
-ScrollReveal().reveal('.timer', { delay: 1000, origin: 'top' });
-ScrollReveal().reveal('.about-p2', { delay: 1000, origin: 'right' });
-ScrollReveal().reveal('.about-p3', { delay: 1000, origin: 'bottom' });
+ScrollReveal().reveal('.timer', { delay: 1000, origin: 'right' });
+ScrollReveal().reveal('.about-p2', { delay:500, origin: 'left' });
+ScrollReveal().reveal('.about-p3', { delay: 1000, origin: 'right' });
 
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;

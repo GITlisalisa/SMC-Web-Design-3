@@ -184,6 +184,8 @@ p{
   font-family: var(--body-font)!important;
   font-size: 1rem!important;
   color: white!important;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .btn-primary{
   color: white!important;
